@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>公告列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/noticeList.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">公告列表</h1>
+	</header>
+	<div class="mui-content">
+		<ul class="notice-list">
+			<!-- <li>
+				<p>
+					<span class="title">标题</span>
+					<time>2019-05-05</time>
+				</p>
+				<div>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					<a href="noticeDetail.html">详情 	<i class="iconSymbol icon__go"></i></a>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/dropload.min.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Notice/noticeList');
+	</script>
+</body>
+</html>

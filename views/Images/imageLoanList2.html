@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<meta charset="UTF-8">          
+		<title>影像及留言</title>     
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/images.css"> 
+	</head>  
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title" id="title">补充放款资料</span>
+		</header> 
+		<div class="content">
+			<h4>影像信息</h4>
+			<div class="df-list" id="imgList">
+				<div id="typeDiv" class="sed">
+					
+				</div>
+				<div id="listDiv">
+					<div class="df-list-item">
+	    				<span class="item-title">请上传以下放款资料</span>
+	    				<span class="iconSymbol icon__dorp icon-go">详细列表</span>
+					</div>
+					<div class="df-list-item info-list-item" id="infoDiv">
+					</div>
+				</div>
+		    	
+			</div> 
+			<h4>留言信息</h4>
+			<div id="msgList">	
+			</div>
+			<div class="df-list margin-top">
+	    		<div class="df-list-item">
+	    			<span class="item-title history">贷款历史</span>
+	    			<span id="loanHistory" class="iconSymbol icon__go icon-go">查看</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="sub">提交</span>   
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('Images/imageLoanList2');
+		</script>
+	</body>
+</html>
+
+

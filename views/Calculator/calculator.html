@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>计算器</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/weui.css">
+	<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+	<script type="text/javascript" src="../../js/common/zepto.min.js"></script>
+	<link rel="stylesheet" href="../../css/resize.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/controller/calculator.css">
+	<link rel="stylesheet" href="../../css/controller/index.css">
+</head>
+<body > 
+	<header>	
+		<h1 class="title">贷款计算器</h1>	
+	</header> 
+	<div class="mui-content content">      
+		<div class="df-list">
+			<div class="df-list-item">
+				<span class="item-title">车辆类型</span>
+				<input id="carTypeInput" class="item-input" type="text" placeholder="请选择车辆类型" readonly="readonly">
+				<span class="iconSymbol icon__go icon-go"></span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title">产品线</span>
+				<input id="pgrpInput" class="item-input" type="text" placeholder="请选择产品线" readonly="readonly">
+				<span class="iconSymbol icon__go icon-go"></span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title must-input">贷款产品</span>
+				<input id="loanProInput" class="item-input" type="text" placeholder="请选择产品" readonly="readonly">
+				<span class="iconSymbol icon__go icon-go"></span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title">申请期限</span>
+				<input id="applyTerm" class="item-input" type="number" readonly="readonly">
+				<span class="icon-go">期</span>
+			</div>
+			<div class="df-list-item" style="display: none;">
+				<span class="item-title">尾款比例</span>
+				<input id="defPct" class="item-input" type="number">
+				<span class="icon-go">%</span>
+			</div>
+		</div>
+		<div class="df-list">
+			<div class="df-list-item">
+				<span class="item-title must-input">购车总价</span>
+				<input id="totalPrice" class="item-input" type="text" placeholder="请输入">
+				<span class="icon-go">元</span>
+			</div>
+		</div>
+		<div class="df-list">
+			<div class="df-list-item">
+				<span class="item-title">计算方式</span>
+				<input id="calMethod" class="item-input" type="text" placeholder="请选择" readonly="readonly">
+				<span class="iconSymbol icon__go icon-go"></span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title must-input">首付比例</span>
+				<input id="downPayRatio" class="item-input" type="number" readonly="readonly">
+				<span class="icon-go">%</span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title">首付金额</span>
+				<input id="downPayAmount" class="item-input" type="text" readonly="readonly">
+				<span class="icon-go">元</span>
+			</div>
+			<div class="df-list-item">
+				<span class="item-title must-input">贷款金额</span>
+				<input id="loanAmount" class="item-input" type="text" readonly="readonly"> 
+				<span class="icon-go">元</span> 
+			</div>
+			<div class="df-list-item">
+				<span class="item-title">执行利率</span> 
+				<input id="exeRate" class="item-input" type="number" readonly="readonly">
+				<span class="icon-go">%</span>
+			</div>
+		</div>
+		
+		<span id="trial" class="trial mui-text-center">试算</span>
+	</div>
+	<nav class="df-bar footer"> 
+		<ul class="df-bar-tab" id="nav">
+			<li id="homePage" class="df-tab-item">
+				<span class="iconSymbol icon__home"></span>
+				<span class="df-tab-label">首页</span>
+			</li>
+			<li id="calculator" class="df-tab-item df-active">
+				<span class="iconSymbol icon__calculator1"></span>
+				<span class="df-tab-label">计算器</span>
+			</li>
+		</ul>
+		<ul class="df-bar-tab"> 
+			<li id="loanPre" class="df-tab-item">
+				<span class="iconSymbol icon__loan"></span>
+				<span class="df-tab-label">贷款管理</span>
+			</li>
+			<li id="mine" class="df-tab-item">
+				<span class="iconSymbol icon__mine1"></span>
+				<span class="df-tab-label">我的</span>
+			</li>
+		</ul>
+		<span id="newPre" class="df-newpre"></span>
+	</nav>
+	<script type="text/javascript" src="../../js/common/mui.min.js" ></script>
+	<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="../../js/common/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="../../js/common/weui.min.js"></script>
+	<script type="text/javascript" src="../../js/core/commonData.js"></script>
+	<script type="text/javascript" src="../../js/core/resize.js"></script>
+	<script type="text/javascript" src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Calculator/calculator');
+	</script>
+</body>
+</html>

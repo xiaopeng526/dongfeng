@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<script type="text/javascript" src="../js/common/standdardSize.js"></script>
+	<link rel="stylesheet" href="../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../css/controller/login.css">
+	<style>
+		.storey_box{
+			position:fixed;
+			left:0;
+			bottom:0;
+			top:0;
+			right:0;
+			background-color:rgba(0,0,0,0.8);
+			z-index:150;
+			display: none; 
+		}
+		.down_Info{
+			display:none; 
+			position:fixed;
+			width:100%;
+			height:100%;
+			top:20%;
+			z-index:500;
+		}
+		.down_Info .imgBtn{
+			width:100%;
+			position: relative;
+			text-align:center;
+		}
+		.down_Info .imgBtn img{
+			width:70%;
+		}
+		.down_Info .downProBar{
+			width:60%;height:1rem;position:absolute;left:20%;bottom: .4rem;
+		}
+		.down_Info .downProBar b{
+			display: inline-block;width:0.4rem;height:0.4rem;line-height:0.4rem;z-index:500;position:absolute;top:0.5rem;left:46%;font-size:0.25rem;color:#fff;
+		}
+		.down_Info p{
+			width:100%;height:0.4rem;padding-top: .2rem;
+		}
+	</style>
+</head>
+<body >
+	<div class="header">
+		<div class="logo-background"></div>  
+	</div>
+	<div class="login-box">
+		<ul class="login-list">
+			<li>
+				<span class="iconSymbol icon icon__agency"></span>
+				<input type="text" id="dealerCode" placeholder="请输入经销商代码">
+			</li>
+			<li>
+				<span class="iconSymbol icon icon__tel"></span>
+				<input type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" id="cellNum" placeholder="请输入手机号码">
+			</li>
+			<li>
+				<span class="iconSymbol icon icon__password"></span>
+				<input type="text" id="password" placeholder="请输入登录密码" id="userPWDSoftKey" type="password" readonly="readonly" minlength="8" maxlength="20">
+			</li>
+			<li class="validate-box">
+				<span class="iconSymbol icon icon__code"></span>
+				<input style="height:.36rem" type="text" id="validateCode" placeholder="请输入右侧图形验证码">
+				<img id="codeImg" alt="验证码"> 
+			</li>  
+		</ul>
+		<a id="forgetPsd">忘记密码？</a>     
+	</div>
+	<footer>  
+		<p>点击登录即代表我已阅读<a id="policy"><i style="text-decoration:underline;font-style:normal">《东风PSA金融隐私政策》</i>、</a><a id="fwtk"><i style="text-decoration:underline;font-style:normal">《东风PSA金融用户服务条款》</i></a></p>
+		<div id="login">登 录</div>        
+	</footer>
+	<div class="storey_box" id="storey_box"></div>
+	<div class="down_Info" id="down_info1">
+		<div class="imgBtn" id="imgBtn">
+			<img src="../images/zdgx.png">
+			<div class="downProBar" id="downProBar">
+				<b id="preNum"></b> 
+				<p></p>
+			</div>
+		</div>	
+	</div>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在登录~</div>
+	</div>
+	<script type="text/javascript" src="../js/common/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/common/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="../js/common/mui.lazyload.js"></script>
+	<script type="text/javascript" src="../js/common/mui.lazyload.img.js"></script>
+	<script type="text/javascript" src="../js/plugins/plugin-pgkeyboard.js"></script>
+	<script type="text/javascript" src="../js/plugins/plugin-passguard.js"></script>
+	<script type="text/javascript" src="../js/plugins/plugin-login.js"></script>
+	<script src="../js/common/vconsole.min.js"></script>
+	<script src="../js/core/sea.js"></script>
+	<script src="../js/common/Base64.js"></script>
+	<script>
+		seajs.config({
+			base: "../js"
+		});
+		seajs.use('login');
+	</script>
+</body>
+</html>

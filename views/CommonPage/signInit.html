@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<title>征信授权</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/sign.css"></link>
+	</head>  
+	<body>
+		<header>
+			<span id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></span>
+			<span class="title">征信授权</span>      
+		</header> 
+		<div class="content">
+			<img class="con-back-img" src="../../images/con02.png" id="imgBg">
+			<div class="img-bg"></div>
+		</div>
+		<div class="footer">
+			<span id="pre">上一步</span> 
+			<span id="sign">在线签署</span>
+		</div>
+		<div class="waiting-box" style="display: none;" id="waitingBox">
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在疯狂加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('CommonPage/signInit');
+		</script>
+	</body>
+</html>
+

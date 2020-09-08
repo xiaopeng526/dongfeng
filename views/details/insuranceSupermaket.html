@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>费用及保险超市</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/insuranceSupermaket.css">
+	<script src="../../js/common/standdardSize.js"></script>
+	<style>
+		.footer {
+		  position: fixed;
+		  bottom: 0;
+		  left: 0;
+		  display: flex;
+		  justify-content: space-around;
+		  width: 100%;
+		  height: .88rem;
+		  background: url(../../images/pre01.png) no-repeat center;
+		  background-size: 100%;
+		  color: #fff;
+		  font-size: .28rem; }
+		  .footer span {
+		    position: relative;
+		    flex: 1;
+		    height: .88rem;
+		    line-height: .88rem;
+		    text-align: center; }
+
+	</style>
+</head>  
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">费用及保险超市</h1>
+	</header>
+	<div class="mui-content">
+		<ul class="list" id="list">
+			<!--<li>
+				<p>
+					<input type="checkbox">
+					<label class="label-checkbox"></label>
+					<span>讲道理大家萨克雷</span>
+					<b>*</b>
+				</p>
+				<div>
+					<p>
+						<span>费用类型</span>               
+						<a>账户管理费</a>
+					</p>
+					<div class="flex">         
+						<p>
+							<span>起止期数</span>
+							<a>1-48</a>       
+						<p>
+							<span>费用收取类型</span>
+							<a>按贷款周期收取</a>
+						</p>
+					</div>
+					<div class="flex">  
+						<p>
+							<span>费用金额</span>
+							<a><small>18.00</small> 元/月</a>
+						</p>
+						<p>
+							<span>实际费用金额</span>
+							<a><small>18.00</small> 元/月</a>
+						</p>
+					</div>
+				</div>
+			</li>-->
+			<!--<li>
+				<p>
+					<input type="checkbox" checked>
+					<label class="label-checkbox"></label>
+					<span>车辆保全保险服务</span>
+					<b style="display:block">*</b>
+				</p>
+				<div class="checked">
+					<p>
+						<span>费用类型</span>               
+						<a>账户管理费</a>
+					</p>
+					<div class="flex">         
+						<p>
+							<span>起止期数</span>
+							<a>1-48</a>       
+						<p>
+							<span>费用收取类型</span>
+							<a>按贷款周期收取</a>
+						</p>
+					</div>
+					<div class="flex">  
+						<p>
+							<span>费用金额</span>
+							<a><small>18.00</small> 元/月</a>
+						</p>
+						<p>
+							<span>实际费用金额</span>
+							<a><small>18.00</small> 元/月</a>
+						</p>
+					</div>
+				</div>
+			</li>-->
+		</ul>
+	</div>
+	<div class="footer">
+		<span id="back">返回</span>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('details/insuranceSupermaket');
+	</script>
+</body>
+</html>

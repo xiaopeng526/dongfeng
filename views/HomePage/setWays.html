@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>密码找回</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<script type="text/javascript" src="../../js/common/zepto.min.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/preStyle.css">
+		<link rel="stylesheet" href="../../css/controller/settings.css">
+		<link rel="stylesheet" href="../../css/weui.css">
+	</head>
+	<body>
+		<header>
+			<span class="iconSymbol icon__back mui-action-back"></span>
+			<span class="title" id="title">密码找回</span>
+		</header>
+		<div class="content">
+			<div class="df-list">
+				<div class="df-list-item">
+					<input id="dealerCde" class="item-input" type="text" placeholder="请输入经销商代码">
+				</div>
+				<div class="df-list-item">
+					<input id="phoneNum" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入手机号">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">验证方式</span>
+					<input value="密码保护" id="verMethod" class="item-input" type="text" placeholder="请选择验证方式" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div id="proPass">
+					<div class="df-list-item">
+						<span class="item-title">问题</span>
+						<input id="problem" class="item-input" type="text" placeholder="请选择问题" readonly="readonly">
+						<span class="iconSymbol icon__go icon-go"></span>
+					</div>
+					<div class="df-list-item">
+						<span class="item-title">答案</span>
+						<input id="answer" class="item-input" type="text" placeholder="请输入答案">
+					</div>
+				</div>
+				<div id="verMess" class="message-code" style="display: none;">
+					<div class="df-list-item">
+						<input id="mesVerCde" class="item-input" type="text" placeholder="请输入短信验证码">
+						<button id="getMesVerCde" class="get-code">获取短信验证码</span>
+					</div>		
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			<span id="next">下一步</span>   
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="../../js/common/weui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/commonData.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('HomePage/setWays');
+		</script>
+	</body>
+</html>
+

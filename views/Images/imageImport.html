@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>    
+		<meta charset="UTF-8">
+		<title>导入图片</title>                  
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">     
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link> 
+		<link rel="stylesheet" href="../../css/base.css">
+		<!-- <link rel="stylesheet" href="../../css/previewimage.css"> -->
+		<link rel="stylesheet" href="../../css/controller/images.css">
+		<style>
+			ul{list-style:none; overflow:auto;padding-top:10px;}
+			ul li{float:left; width:33%;padding:0px 3px 5px 3px;}
+			.img-father {position: relative;}
+			.img-father div.img-container{width:2.4rem;height:2.4rem;background-color:#FFF;margin-bottom:.06rem;margin-right:.06rem;display: flex;align-items: center;justify-content: center;}
+			.img-father img {width:2.4rem;height:2.4rem;vertical-align: middle;object-fit: cover;border-radius: 3px;}
+			.img-father div.img-container img.high {width: auto;height: 100%; }
+			.img-father div.img-container img.widh {width: 100%;height: auto; }
+			.img-father .maskBox{position:absolute;top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.4) ;}
+			.img-father .maskBox b{display:inline-block;color:#FFF;font-weight:normal;font-size:0.28rem;width:0.8rem;height:0.45rem;background:#7BC468;text-align:center;line-height:0.45rem;}
+			.footBtn{position:relative;}
+			.btn{width:5.8rem;height:.88rem;position:absolute;top:2.5rem;left:0.8rem;line-height: .88rem;text-align: center;color:#fff;background: url(../../images/login03.png);background-size:cover;}
+			.btn1{width:2.8rem;height:.88rem;position:absolute;top:2.5rem;left:0.8rem;line-height: .88rem;text-align: center;color:#fff;background: url(../../images/per04.png);background-size:cover;}
+			.btn2{width:2.8rem;height:.88rem;position:absolute;top:2.5rem;right:0.8rem;line-height: .88rem;text-align: center;color:#fff;background: url(../../images/per05.png);background-size:cover;}
+			.sort-handle {
+				cursor: move;
+				cursor: -webkit-grabbing;
+			}
+			.sort-ghost {
+				opacity: 0;
+			}
+			.sort-chosen {
+				transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				transition: transform .3s;
+				-webkit-transition: transform .3s;
+			}
+			.sort-chosen:last-child {
+				transition: none;
+				-webkit-transition: none;
+			}
+			@-webkit-keyframes shake-rotate {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				12.5% {
+					-webkit-transform: rotate(1.25deg);
+				}
+				25% {
+					-webkit-transform: rotate(2.5deg);
+				}
+				37.5% {
+					-webkit-transform: rotate(1.25deg);
+				}
+				50% {
+					-webkit-transform: rotate(0deg);
+				}
+				62.5% {
+					-webkit-transform: rotate(-1.25deg);
+				}
+				75% {
+					-webkit-transform: rotate(-2.5deg);
+				}
+				87.5% {
+					-webkit-transform: rotate(-1.25deg);
+				}
+				100% {
+					-webkit-transform: rotate(0deg);
+				}
+			}
+			@media only screen and (min-width: 321px) and (max-width: 375px) {
+				ul {
+					/* margin-left: 8%; */
+				}
+			}
+			.progress-bar .btn-box{
+				display: flex;
+				justify-content: space-between;
+				border-top: 1px solid rgba(222,222,222,0.9);
+				font-size: .32rem;
+				height: .84rem;
+				line-height: .84rem;
+				position:absolute;
+				bottom:0rem;
+				left:0rem;
+				width:100%;
+				color:#AAAAAA;
+			}
+			.progress-bar .btn-box div:first-child{
+				width:100%;
+				text-align:center;
+				flex:1;
+			}
+			.confirm-box{
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 100;
+				background-color: rgba(0,0,0,0.6);	
+			}
+			.infoTip{
+				position: fixed;
+				width: 78%;
+				left: 11%;
+				top: 25%;
+				z-index: 500;
+				background-color: #fff;
+				border: 1px solid #ddd;
+				border-radius: 12px;
+			}
+			.infoTip h2{
+				width: 100%;
+				height: 1rem;
+				line-height: 1rem;
+				font-size: .35rem;
+				font-weight: 400;
+				text-align:left;
+				padding:0.1rem 0.5rem;
+			}
+			.infoTip h2 span{
+				display:inline-block;
+			}
+			.infoTip h2 span:first-child{
+				color:#64A5D2;
+				margin-left:0.3rem;
+			}
+			.infoTip ul{
+				width: 100%;
+				font-size: .3rem;
+				padding: .4rem;
+			}
+			.infoTip ul li{
+				width: 100%;
+				/* height: .86rem; */
+				/* line-height: .86rem; */
+			}
+			.infoTip .btn-box{
+				display: flex;
+				justify-content: space-between;
+				border-top: 1px solid rgba(222,222,222,0.9);
+				font-size: .32rem;
+				text-align: center;
+				height: .84rem;
+				line-height: .84rem;
+			}
+			.infoTip .btn-box div{
+				flex: 1;
+			}
+			.accomplishTip{
+				display: flex;
+				justify-content: space-between;
+				width: 45%;
+				margin: .1rem .5rem;
+				font-size: 0.3rem;	
+			}
+			.accomplishTip .succTip span{color:#07C160;}
+			.accomplishTip .failTip span{color:#FF0000;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="back"></span>
+			<h1 class="mui-title">导入图片</h1>
+			<span class="addImg" id="addImg">添加</span>
+		</header>
+		<div class="content">
+			<ul id="ul_imgs"></ul>
+		</div>
+		<div class="footBtn">
+			<div id="uploadPic" class="btn" style="display:none;">上传</div>
+			<div id="reUploadPic" class="btn1" style="display:none;">重传失败项</div>
+			<div id="completePic" class="btn2" style="display:none;">完成</div>
+		</div>
+		<div class="confirm-box" style="display:none;" id="conBox">
+			<div class="infoTip">
+				<div id="progressBar" style="display:none;">
+					<h2>正在上传<span id="singleVal"></span><span id="countVal"></span></h2>
+					<ul>
+						<li id="progressTip">
+							<p class="mui-progressbar mui-progressbar-in progress-p" data-progress="0" id="progressId"><span style="transform: translate3d(-100%, 0px, 0px);background:#64A5D2;"></span></p>
+						</li>
+					</ul>
+				</div>
+				<div id="progressInfo" style="display:none;">
+					<h2>上传完成!</h2>	
+					<div class="accomplishTip">
+						<div>
+							<label class="succTip"> 成功<span id="succCount"></span>张</label>
+						</div>
+						<div>
+							<label class="failTip"> 失败<span id="failCount"></span>张</label>
+						</div>
+					</div>
+					<ul id="failReson"></ul>
+				</div>
+				<div class="btn-box" id='btn-box'>
+					<div id="conBtn"  style="color:#ADA9A4;">确认</div>
+				</div>	
+			</div>
+		</div>
+		<div class="waiting-box" id="waitingBox" style="display: none;">
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/md5.js"></script>
+		<script type="text/javascript" src="../../js/common/previewImage.js"></script>
+		<script type="text/javascript" src="../../js/common/Sortable-edit.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('Images/imageImport');
+		</script>
+	</body>
+</html>
+

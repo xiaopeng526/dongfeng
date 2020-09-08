@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<title>贷款计算器详情</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/controller/calculatorDetail.css"> 
+</head>	   
+<body>
+	<header>
+		<span class="iconSymbol icon__back mui-action-back"></span>
+		<span class="title">贷款计算器</span>
+	</header>
+	<div class="content">
+		<ul class="calc-list" id="details">
+		</ul>
+	</div>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<script type="text/javascript" src="../../js/common/mui.min.js" ></script>
+	<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Calculator/calculatorDetail');
+	</script>
+</body>
+</html>

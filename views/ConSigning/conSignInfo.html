@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>合同信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/mui.picker.min.css">
+	<script src="../../js/common/standdardSize.js"></script>
+	<script src="../../js/common/zepto.min.js"></script>
+	<link rel="stylesheet" href="../../css/resize.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignInfo.css">
+	
+	<link rel="stylesheet" href="../../css/weui.css">
+	<style>
+		.mui-popup-button.mui-popup-button-bold{color:#676767;}
+		
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">合同信息</h1>
+	</header>
+	<div class="mui-bar mui-bar-footer footer">
+		<a href="prev" href="javascript:;" style="display: none;">返回</a>
+		<a id="submit" href="javascript:;">下一步</a>
+	</div>
+	<div class="mui-content">
+		<!-- 基本信息 -->
+		<div class="info base-info">
+			<h4>基本信息</h4>
+			<ul>
+				<li>
+					<label>客户姓名</label>
+					<span id="custname"></span>
+				</li>
+				<li>
+					<label>货款品种</label>
+					<span id="typDesc"></span>
+				</li>
+				<li>
+					<label>车辆价格</label>
+					<span id="vehcarprice">0.00 元</span> 
+				</li>
+				<li>
+					<label>利率</label>
+					<span id="intRate">0.00 %</span> 
+				</li>
+				<li>
+					<label>贷款金额</label>
+					<span id="contLoanAmt">0.00 元</span> 
+				</li>
+				<li>
+					<label>经销商贴息</label>
+					<span id="fltsSbsyVal">0.00 %</span> 
+				</li>
+			</ul>
+		</div>
+		<!-- 车辆信息 -->
+		<div class="info cars-info">
+			<h4>车辆信息</h4>
+			<ul>
+				<li>
+					<label>车架号<b>*</b></label>
+					<input id="veh_chassis" type="text" maxlength="20" placeholder="必填">
+					<a id="vehCarmer" href="javascript:;" class="iconSymbol icon__cemera"></a>
+				</li>
+				<li>
+					<label>发动机号</label>
+					<input id="veh_engin_no" type="text" maxlength="25" placeholder="选填">
+				</li>
+				<li class="sel_drop_box">
+					<label>上牌城市</label>
+					<input type="text" id="lic_city" readonly="readonly" name="onlyread" placeholder="请选择上牌城市">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+			</ul>
+		</div>
+		<!-- 还款账号信息 -->
+		<div class="info repay-amount-info">
+			<h4>还款账号信息</h4>
+			<ul>
+				<li>
+					<label>银行账户类型<b>*</b></label>
+					<input id="appl_ac_kind" type="text" readonly="readonly" name="onlyread" placeholder="请选择银行账户类型">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li>
+					<label>账户户名<b>*</b></label>
+					<input id="appl_ac_nam" type="text" readonly="readonly" name="onlyread" placeholder="请选择账户户名">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li id="amountBank">
+					<label>开户银行 <b>*</b></label>
+					<input id="appl_ac_bchname" type="text" readonly="readonly" name="onlyread" placeholder="请选择开户银行"> 
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li>
+					<label>账号<b>*</b></label>
+					<input id="appl_ac_no" type="number" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>30)this.value=this.value.slice(0,30);" pattern="[^0-9$]+" placeholder="请输入账号">
+					<a id="accCarmer" href="javascript:;" class="iconSymbol icon__cemera"></a>
+				</li>
+				<li>
+					<label>证件类型<b>*</b></label>
+					<input id="idtype" type="text" readonly="readonly" name="onlyread" placeholder="请选择证件类型" />
+					<!-- <span id="idtype"></span> --> 
+				</li>
+				<li>
+					<label>证件号码<b>*</b></label>
+					<input id="idNo" type="text" maxlength="25" readonly="readonly" name="onlyread" placeholder="请输入证件号码" />
+				</li>
+			</ul>
+		</div>
+		<!-- 收款账号信息 -->
+		<div class="info receipt-amount-info">
+			<h4>收款账号信息</h4>
+			<ul>
+				<li>
+					<label>银行账户类型<b>*</b></label>
+					<input type="text" id="appl_rc_kind" readonly="readonly" name="onlyread" placeholder="请选择银行账户类型">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li>
+					<label>账户户名<b>*</b></label>
+					<input id="appl_rc_nam" type="text" maxlength="30" placeholder="请选择账户户名" />
+				</li>
+				<li id="certTypeLi">
+					<label>证件类型<b>*</b></label>
+					<input id="certType"  type="text" readonly="readonly" name="onlyread" placeholder="请选择证件类型">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li id="certNoLi">
+					<label>证件号码<b>*</b></label>
+					<input id="certNo" type="text" placeholder="请输入证件号码" /> 
+				</li>
+				<li>
+					<label>开户银行<b>*</b></label>
+					<input id="appl_rc_bchname" type="text" readonly="readonly" name="onlyread" placeholder="请选择开户银行" />
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li>
+					<label>账号<b>*</b></label>
+					<input id="appl_rc_no" type="number" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>30)this.value=this.value.slice(0,30);" pattern="[^0-9$]+" placeholder="请输入账号">
+					<a id="recAccCarmer" href="javascript:;" class="iconSymbol icon__cemera"></a>
+				</li>
+				<li id="rc_province_li" class="hide">
+					<label>开户银行所在地(省)<b>*</b></label>
+					<input id="rc_province" type="text" readonly="readonly" name="onlyread" placeholder="请输入开户银行所在地(省)">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li id="rc_oragnizename_li" class="hide">
+					<label>开户机构</label>
+					<input id="rc_oragnizename" type="text" placeholder="请输入开户机构" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 拨打电话遮罩层 -->
+	<div class="telMask">
+		<div class="tel">
+			<div class="telCode"><span id="acShow">还款</span>账号户名和身份证号码不匹配，请确认客户的实际开户信息，如确认无误，请补充客户的开户凭证</div>
+			<div class="telBtn">
+				<a id="repayment" href="javascript:;">还款开户凭证</a>
+				<a id="collection" href="javascript:;">收款开户凭证</a>
+			</div>
+		</div>
+	</div>
+	<!--<div class="loading">
+		<div class="loading-box">
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips mui-text-center">正在疯狂加载中~</div>
+		</div>
+	</div>-->
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/jweixin-1.0.0.js" ></script>
+	<script src="../../js/common/weui.min.js" ></script>
+	<script src="../../js/core/cityData.min.js"></script>
+	<script src="../../js/core/commonData.js"></script>
+	<script type="text/javascript" src="../../js/core/resize.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSignInfo');
+	</script>
+</body>
+</html>

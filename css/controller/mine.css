@@ -1,0 +1,27 @@
+@charset "utf-8";
+.mine-header{width:100%;height:4.5rem;padding-top:1.35rem;background: url(../../images/mineBg.png) 0 0;background-size:100% 4.5rem;}
+.my-info{display: flex;align-items: center;height:3.1rem;padding:.9rem 0 1rem .6rem;}
+.my-info img{width:1.2rem;height:1.2rem;margin-right:.6rem;}
+.my-info p{font-size:.26rem;line-height:1.5em;color:#F6F6F6;}
+.my-info .userName {font-size:.32rem;}
+.my-content{padding-top:.2rem;}
+.list li{display: flex;align-items: center;position:relative;height:.8rem;padding:0 .2rem 0 .4rem;font-size:.26rem;color:#4c4c4c;background: #fff;}
+.list li.service{display: none;color:#ddd;}
+.list li:after{position:absolute;left:.2rem;bottom:0;right:0;content:'';height:1px;background: #eee;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.list li.edit{margin-top:.7rem;}
+.list li .iconSymbol{font-size:.36rem;margin-right:.14rem;}
+.list li .icon__go{position:absolute;right:.2rem;font-size:13px;margin-right:0;}
+.list li .icon__setting{color:#6fba2c;}
+.list li .icon__message{color:#eb6428;}
+.list li .icon__FAQ{color:#64a5d2;}
+.list li .icon__service{color:#F7E003;}
+.list li .icon__out{color:#dc002e;}
+
+/* 安全设置 */
+.mui-content ul{padding-top:.2rem;}
+li input[type="text"], li input[type="password"]{padding-left:0;margin-bottom:0;font-size: .26rem;color:#222;;border:none;background: transparent;}
+li.flex input{width:4.3rem;border-right:1px solid #eee;}
+li.flex span{width:2.7rem;color:#64A5D2;}
+li.flex button{width:2.7rem;color:#64A5D2;border: none; font-size: .24rem;}
+.btn{display: block;width:5.8rem;height:.88rem;margin:6rem auto 0;line-height:.88rem;font-size:.36rem;color:#fff;background: #ddd;border-radius:6px;}
+.btn.primary-btn{background: url(../../images/login03.png) 0 0;background-size:5.8rem .88rem;}

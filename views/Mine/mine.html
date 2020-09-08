@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我的</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/index.css">
+	<link rel="stylesheet" href="../../css/controller/mine.css">  
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body style="height:100%;">
+	<div class="mine-header">
+		<div class="my-info">
+			<img src="../../images/myPic.png" />
+			<div>
+				<p class="userName" id="userName"></p>
+				<p class="companyName" id="companyName"></p>
+				<p class="carType" id="carType"></p>
+			</div>
+		</div>
+	</div>
+	<ul class="my-content list">
+		<li>
+			<i class="iconSymbol icon__setting"></i><label> 安全设置</label>
+			<i class="iconSymbol icon__go"></i>
+		</li>
+		<li>
+			<i class="iconSymbol icon__message"></i><label> 消息中心</label>
+			<i class="iconSymbol icon__go"></i>
+		</li>
+		<li style="display: none;">
+			<i class="iconSymbol icon__FAQ"></i><label> 查询FAQ文件</label>
+			<i class="iconSymbol icon__go"></i>
+		</li>
+		<li>
+			<i class="iconSymbol icon__service"></i><label> 常见问答</label>
+			<i class="iconSymbol icon__go"></i>
+		</li>
+		<li class="edit" id="quit">
+			<i class="iconSymbol icon__out"></i><label> 退出登录</label>
+			<i class="iconSymbol icon__go"></i>
+		</li>
+	</ul>
+	<nav class="df-bar">
+		<ul class="df-bar-tab" id="nav">
+			<li id="homePage" class="df-tab-item">
+				<span class="iconSymbol icon__home"></span>
+				<span class="df-tab-label">首页</span>
+			</li>
+			<li id="calculator" class="df-tab-item">
+				<span class="iconSymbol icon__calculator1"></span>
+				<span class="df-tab-label">计算器</span>
+			</li>
+		</ul>
+		<ul class="df-bar-tab"> 
+			<li id="loanPre" class="df-tab-item">
+				<span class="iconSymbol icon__loan"></span>
+				<span class="df-tab-label">贷款管理</span>
+			</li>
+			<li id="mine" class="df-tab-item df-active">
+				<span class="iconSymbol icon__mine1"></span>
+				<span class="df-tab-label">我的</span>
+			</li>
+		</ul>
+		<span id="newPre" class="df-newpre"></span> 
+	</nav>
+	
+	<div style="position:absolute;top:83%;text-align:center;width:100%;line-height:12px;">
+		<p style="font-size:9px;">©2019 DPCAFC. All rights reserved</p>
+		<p style="font-size:9px;">京ICP备12006898号</p>
+		<p style="font-size:9px;">版本号：<span id="verCode">6.6</span></p>
+	</div>
+	
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Mine/mine');
+	</script>
+</body>
+</html>

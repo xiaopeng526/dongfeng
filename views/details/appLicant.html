@@ -1,0 +1,344 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">  
+		<title>预审申请人信息</title>         
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/mui.picker.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/appStyle.css">
+	</head>
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title">申请人信息</span>
+		</header>
+		<div class="app-tab" id="appTab">
+			<div class="app-tab-bg">
+				<span class="left"></span>
+				<span class="center"></span>
+				<span class="right"></span>
+			</div> 
+			<div class="app-tab-item must-input" id="mainPerson">  
+				借款人       
+			</div>
+			<div class="app-tab-item" id="commonPerson">
+				共借人 
+			</div>
+			<div class="app-tab-item" id="assurePerson">
+				保证人
+			</div>
+		</div>
+		<div class="content" id="person">
+			<h4>基本信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idType" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span>
+		    		<input id="nationality" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumber" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custName" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">性别</span>
+					<input id="indivSex" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDate" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNot">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStart" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件到期日</span>
+					<input id="idDate" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobile" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话" disabled="disabled">
+				</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">最高学历</span>
+					<input id="education" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">婚姻状况</span>
+					<input id="married" class="item-input must-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">
+				</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">户籍地址</span>
+					<input id="domiPlace" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housing" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+				</div>
+				<!--<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddress" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdet" class="item-input" type="text" placeholder="请输入详细地址" disabled="disabled">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住门牌号</span>
+					<input id="homeAddressdetnum" class="item-input" type="text" placeholder="请输入门牌号" disabled="disabled">
+				</div>-->
+			</div>
+			<h4>单位信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNature" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+				</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input no-must">现单位名称</span>
+		    		<input id="companyName" class="item-input" type="text" placeholder="请输入现单位名称" disabled="disabled">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input no-must">现单位性质</span>
+					<input id="companyNature" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">所属行业</span>
+					<input id="industry" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">职务</span>
+					<input id="workName" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+				</div>
+			</div>
+		</div>
+		
+		<div class="content" id="personCom" style="display: none;">
+			<div class="app-handle-box">
+				<span id="addHandleCom" class="add">添加</span>
+				<span id="reduceHandleCom">删除</span>
+			</div>
+			<div id="commonBox" style="display: none;">
+			<h4>基本信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownCom" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeCom" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span>
+		    		<input id="nationalityCom" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumberCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custNameCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">性别</span>
+					<input id="indivSexCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDateCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNotCom">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStartCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件到期日</span>
+					<input id="idDateCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileCom" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话" disabled="disabled">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">最高学历</span>
+					<input id="educationCom" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">婚姻状况</span>
+					<input id="marriedCom" class="item-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">   
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housingCom" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+				</div>
+			</div>
+			<h4>单位信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNatureCom" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+				</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title must-input no-must">现单位名称</span>
+		    		<input id="companyNameCom" class="item-input" type="text" placeholder="请输入现单位名称" disabled="disabled">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input no-must">现单位性质</span>
+					<input id="companyNatureCom" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">所属行业</span>
+					<input id="industryCom" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">职务</span>
+					<input id="workNameCom" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+				</div>
+			</div>
+			
+			</div>
+		</div>
+		
+		<div class="content" id="personAss" style="display: none;">
+			<div class="app-handle-box">
+				<span id="addHandleAss" class="add">添加</span>
+				<span id="reduceHandleAss">删除</span>
+			</div>
+			<div id="assureBox" style="display: none">
+			<h4>基本信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownAss" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeAss" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span>
+		    		<input id="nationalityAss" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumberAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custNameAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">性别</span>
+					<input id="indivSexAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDateAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNotAss">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStartAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">    
+					<span class="item-title">证件到期日</span>
+					<input id="idDateAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileAss" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话" disabled="disabled">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">最高学历</span>
+					<input id="educationAss" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">婚姻状况</span>
+					<input id="marriedAss" class="item-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housingAss" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+				</div>
+			</div>
+			<h4>单位信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNatureAss" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+				</div>  
+		    	<div class="df-list-item">
+		    		<span class="item-title must-input no-must">现单位名称</span>
+		    		<input id="companyNameAss" class="item-input" type="text" placeholder="请输入现单位名称" disabled="disabled">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input no-must">现单位性质</span>
+					<input id="companyNatureAss" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">所属行业</span>
+					<input id="industryAss" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input no-must">职务</span>
+					<input id="workNameAss" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="back">返回</span>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.poppicker.js"></script>
+		<script type="text/javascript" src="../../js/core/commonData.js"></script>
+		<script type="text/javascript" src="../../js/core/commonClass.js"></script>
+		<script type="text/javascript" src="../../js/core/cityData.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('details/appLicant');
+		</script>
+	</body>
+</html>
+

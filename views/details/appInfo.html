@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<meta charset="UTF-8">   
+		<title>申请人信息</title>  
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/mui.picker.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/appInfo.css"> 
+	</head>
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title">申请人信息</span>
+		</header>
+		<div class="app-tab" id="appTab">
+			<div class="app-tab-bg"> 
+				<span class="left"></span>
+				<span class="center"></span>
+				<span class="right"></span>
+			</div> 
+			<div class="app-tab-item must-input" id="mainPerson">  
+				借款人       
+			</div>
+			<div class="app-tab-item" id="commonPerson">
+				共借人
+			</div>
+			<div class="app-tab-item" id="assurePerson">
+				保证人
+			</div>
+			<div class="app-tab-item must-input" id="contactPerson">
+				联系人
+			</div> 
+		</div>
+		<div class="content" id="mainPersonCon">
+			<h4>基本信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idType" class="item-input" type="text" readonly="readonly" value="" disabled="disabled">
+		    	</div>   
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span>
+		    		<input id="nationality" class="item-input" type="text" readonly="readonly" value="" disabled="disabled">
+		    	</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumber" class="item-input" type="text" readonly="readonly" disabled="disabled">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custName" class="item-input" type="text" readonly="readonly" disabled="disabled">
+				</div>     
+				<div class="df-list-item">  
+					<span class="item-title">性别</span>
+					<input id="indivSex" class="item-input" type="text" readonly="readonly" disabled="disabled">
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDate" class="item-input" type="text" readonly="readonly" disabled="disabled">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNot">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStart" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件到期日</span>
+					<input id="idDate" class="item-input" type="text" readonly="readonly" disabled="disabled">
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title">移动电话</span>
+					<input id="mobile" class="item-input" type="number" placeholder="请输入移动电话" disabled="disabled">
+					<span class="iconSymbol icon__add icon-go" id="addMobile"></span>
+				</div>     
+				<div class="df-list-item" style="display: none;">
+					<span class="item-title" style="color: #fff;">移动电话</span>
+					<input id="mobile2" class="item-input" type="number" placeholder="请输入移动电话" readonly="readonly">
+					<span class="iconSymbol icon__remove icon-go" id="removeMobile"></span>
+				</div>            
+				<div class="df-list-item"> 
+					<span class="item-title item-title-check must-input">是否接收还款提醒短信</span>
+					<span class="item-empty"></span>  
+					<span id="isMss" class="iconSymbol icon__checked icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhone" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">最高学历</span>
+					<input id="education" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">婚姻状况</span>
+					<input id="married" class="item-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+			</div>
+			<h4>住宅信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housing" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddress" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdet" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住门牌号</span>
+					<input id="homeAddressdetnum" class="item-input" type="text" placeholder="请输入门牌号" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">户籍同现住房</span>
+					<p class="item-p" id="isDomiAddress">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">户籍地址</span>
+					<input id="domiAddress" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">户籍详细地址</span>
+					<input id="domiAddressdet" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div id="selfAddressBox" style="display: none;"> 
+					<div class="df-list-item">
+						<span class="item-title">自有房同现住房</span>
+						<p class="item-p" id="isSelfAddress">
+							<span class="yes">是</span>
+							<span class="no selected">否</span>
+						</p>      
+					</div>    
+					<div class="df-list-item">
+						<span class="item-title">自有房地址</span>
+						<input id="selfAddress" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+						<span class="iconSymbol icon__go icon-go"></span>
+					</div>
+					<div class="df-list-item">
+						<span class="item-title" style="color:#fff;">自有房详细地址</span>
+						<input id="selfAddressdet" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+					</div>
+				</div>
+				
+			</div>
+			<h4>单位信息</h4>    
+			<div class="df-list"> 
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNature" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">月均收入</span>
+					<input id="monthlyIn" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">元</span>
+				</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title must-input">现单位名称</span>
+		    		<input id="companyName" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title no-must">所在部门</span>
+		    		<input id="department" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位工龄</span>
+					<input id="workAge" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">年</span>
+				</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位性质</span>
+					<input id="companyNature" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">所属行业</span>
+					<input id="industry" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">职务</span>
+					<input id="workName" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">现单位地址</span>
+					<input id="companyAddress" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title no-must" style="color:#fff;">详细地址</span>
+					<input id="companyAddressdet" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title no-must">办公电话</span>
+					<input id="officePhone" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+				</div> 
+			</div>
+		</div>
+		
+		<div class="content" id="commonPersonCon" style="display: none;">
+			<div class="app-handle-box">
+				<span id="addHandleCom">添加</span>
+				<span id="reduceHandleCom" class="reduce">删除</span>
+			</div>
+			<div id="commonBox" style="display: none;">
+			<h4>基本信息</h4>   
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownCom" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeCom" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span>
+		    		<input id="nationalityCom" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumberCom" class="item-input" type="text" readonly="readonly">
+					<span class="iconSymbol icon__cemera icon-go" id="cemeraCom"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custNameCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">性别</span>
+					<input id="indivSexCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDateCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNotCom">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStartCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件到期日</span>
+					<input id="idDateCom" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileCom" class="item-input" type="number" placeholder="请输入移动电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhoneCom" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">最高学历</span>
+					<input id="educationCom" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">婚姻状况</span>
+					<input id="marriedCom" class="item-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+			</div>
+			<h4>住宅信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housingCom" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddressCom" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdetCom" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住门牌号</span>
+					<input id="homeAddressdetnumCom" class="item-input" type="text" placeholder="请输入门牌号" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">户籍同现住房</span>
+					<p class="item-p" id="isDomiAddressCom">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">户籍地址</span>
+					<input id="domiAddressCom" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">户籍详细地址</span>
+					<input id="domiAddressdetCom" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>            
+				<div id="selfAddressBoxCom" style="display: none;"> 
+					<div class="df-list-item">
+						<span class="item-title">自有房同现住房</span>
+						<p class="item-p" id="isSelfAddressCom">
+							<span class="yes">是</span> 
+							<span class="no selected">否</span>
+						</p>      
+					</div>    
+					<div class="df-list-item">
+						<span class="item-title">自有房地址</span>
+						<input id="selfAddressCom" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+						<span class="iconSymbol icon__go icon-go"></span>
+					</div>
+					<div class="df-list-item">
+						<span class="item-title" style="color:#fff;">自有房详细地址</span>
+						<input id="selfAddressdetCom" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+					</div>
+				</div>	
+			</div>
+			<h4>单位信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNatureCom" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">月均收入</span>
+					<input id="monthlyInCom" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">元</span>
+				</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title must-input">现单位名称</span>
+		    		<input id="companyNameCom" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title no-must">所在部门</span>
+		    		<input id="departmentCom" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位工龄</span>
+					<input id="workAgeCom" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">年</span>
+				</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位性质</span>
+					<input id="companyNatureCom" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">所属行业</span>
+					<input id="industryCom" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">职务</span>
+					<input id="workNameCom" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">现单位地址</span>
+					<input id="companyAddressCom" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>  
+				<div class="df-list-item">
+					<span class="item-title no-must" style="color:#fff;">详细地址</span>
+					<input id="companyAddressdetCom" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title no-must">办公电话</span>
+					<input id="officePhoneCom" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+				</div> 
+			</div>
+			</div>
+		</div>   
+		
+		<div class="content" id="assurePersonCon" style="display: none;">
+			<div class="app-handle-box">
+				<span id="addHandleAss">添加</span>
+				<span id="reduceHandleAss" class="reduce">删除</span>
+			</div>
+			<div id="assureBox" style="display: none">
+			<h4>基本信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownAss" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeAss" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title">国籍</span> 
+		    		<input id="nationalityAss" class="item-input" type="text" readonly="readonly" value="">
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">证件号码</span>
+					<input id="idNumberAss" class="item-input" type="text" readonly="readonly">
+					<span class="iconSymbol icon__cemera icon-go" id="cemeraAss"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">姓名</span>
+					<input id="custNameAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">性别</span>
+					<input id="indivSexAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">出生日期</span>
+					<input id="apptStartDateAss" class="item-input" type="text" readonly="readonly">
+				</div>    
+				<div class="df-list-item">   
+					<span class="item-title">证件是否永久有效</span>
+					<p class="item-p" id="isOrNotAss"> 
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件开始日</span>
+					<input id="idStartAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">证件到期日</span>
+					<input id="idDateAss" class="item-input" type="text" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileAss" class="item-input" type="number" placeholder="请输入移动电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhoneAss" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">最高学历</span>
+					<input id="educationAss" class="item-input" type="text" placeholder="请选择最高学历" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">婚姻状况</span>
+					<input id="marriedAss" class="item-input" type="text" placeholder="请选择婚姻状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+			</div>
+			<h4>住宅信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">居住状况</span>
+					<input id="housingAss" class="item-input" type="text" placeholder="请选择居住状况" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddressAss" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdetAss" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住门牌号</span>
+					<input id="homeAddressdetnumAss" class="item-input" type="text" placeholder="请输入门牌号" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">户籍同现住房</span>
+					<p class="item-p" id="isDomiAddressAss">
+						<span class="yes">是</span>
+						<span class="no selected">否</span>
+					</p>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">户籍地址</span>
+					<input id="domiAddressAss" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">户籍详细地址</span>
+					<input id="domiAddressdetAss" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>         
+				<div id="selfAddressBoxAss" style="display: none;"> 
+					<div class="df-list-item">
+						<span class="item-title">自有房同现住房</span>
+						<p class="item-p" id="isSelfAddressAss">
+							<span class="yes">是</span>
+							<span class="no selected">否</span>
+						</p>      
+					</div>    
+					<div class="df-list-item">
+						<span class="item-title">自有房地址</span>
+						<input id="selfAddressAss" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+						<span class="iconSymbol icon__go icon-go"></span>
+					</div>
+					<div class="df-list-item">
+						<span class="item-title" style="color:#fff;">自有房详细地址</span>
+						<input id="selfAddressdetAss" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+					</div>
+				</div>	 
+			</div>
+			<h4>单位信息</h4>
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">工作性质</span>
+					<input id="workNatureAss" class="item-input" type="text" placeholder="请选择工作性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">月均收入</span>
+					<input id="monthlyInAss" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">元</span>
+				</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title must-input">现单位名称</span>
+		    		<input id="companyNameAss" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+		    		<span class="item-title no-must">所在部门</span>
+		    		<input id="departmentAss" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+		    	</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位工龄</span>
+					<input id="workAgeAss" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+					<span class="icon-go">年</span>
+				</div>
+		    	<div class="df-list-item">
+					<span class="item-title must-input">现单位性质</span>
+					<input id="companyNatureAss" class="item-input" type="text" placeholder="请选择现单位性质" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">所属行业</span>
+					<input id="industryAss" class="item-input" type="text" placeholder="请选择所属行业" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">职务</span>
+					<input id="workNameAss" class="item-input" type="text" placeholder="请选择职务" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">现单位地址</span>
+					<input id="companyAddressAss" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div> 
+				<div class="df-list-item">
+					<span class="item-title no-must" style="color:#fff;">详细地址</span>
+					<input id="companyAddressdetAss" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title no-must">办公电话</span>
+					<input id="officePhoneAss" class="item-input" type="text" placeholder="请输入" readonly="readonly">
+				</div> 
+			</div> 
+			</div>
+		</div>   
+		<div class="content" id="personCat" style="display: none;">
+			<div class="df-list" style="margin-top: .2rem;" id="rel1">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownCat0" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>   
+				<div class="df-list-item"> 
+					<span class="item-title must-input">姓名</span>
+					<input id="custNameCat0" class="item-input" type="text" placeholder="请输入姓名" readonly="readonly">
+				</div> 
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeCat0" class="item-input" type="text" readonly="readonly" placeholder="请选择证件类型">
+		    		<span class="iconSymbol icon__go icon-go"></span>
+		    	</div>         
+				<div class="df-list-item"> 
+					<span class="item-title">证件号码</span> 
+					<input id="idNumberCat0" class="item-input" type="text"  placeholder="请输入证件号码" readonly="readonly">
+				</div>
+				<div class="df-list-item must-input">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileCat0" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhoneCat0" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddressCat0" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdetCat0" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+			</div> 
+			<div id="rel2" class="df-list" style="margin-top: .2rem;display: none;">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownCat1" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">姓名</span>
+					<input id="custNameCat1" class="item-input" type="text" placeholder="请输入姓名" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeCat1" class="item-input" type="text" readonly="readonly" placeholder="请选择证件类型">
+		    		<span class="iconSymbol icon__go icon-go"></span>
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title">证件号码</span>
+					<input id="idNumberCat1" class="item-input" type="text" placeholder="请输入证件号码" readonly="readonly">
+				</div>
+				<div class="df-list-item must-input">
+					<span class="item-title must-input">移动电话</span>
+					<input id="mobileCat1" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话" readonly="readonly">
+				</div>   
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhoneCat1" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddressCat1" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdetCat1" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+			</div>
+			<div id="rel3" class="df-list" style="margin-top: .2rem;display: none;">
+				<div class="df-list-item">
+					<span class="item-title must-input">与借款人关系</span>
+					<input id="relshipownCat2" class="item-input" type="text" placeholder="请选择与借款人关系" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">姓名</span>
+					<input id="custNameCat2" class="item-input" type="text" placeholder="请输入姓名" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+		    		<span class="item-title">证件类型</span>
+		    		<input id="idTypeCat2" class="item-input" type="text" readonly="readonly" placeholder="请选择证件类型">
+		    		<span class="iconSymbol icon__go icon-go"></span>
+		    	</div>
+				<div class="df-list-item">
+					<span class="item-title">证件号码</span>
+					<input id="idNumberCat2" class="item-input" type="text" placeholder="请输入证件号码" readonly="readonly">
+				</div>
+				<div class="df-list-item must-input">
+					<span class="item-title must-input">移动电话</span>
+					<input readonly="readonly" id="mobileCat2" class="item-input" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入移动电话">
+				</div>   
+				<div class="df-list-item">
+					<span class="item-title">家庭电话</span>
+					<input id="homePhoneCat2" class="item-input" type="text" placeholder="请输入家庭电话" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">居住地址</span>
+					<input id="homeAddressCat2" class="item-input" type="text" placeholder="请选择区域" readonly="readonly">
+					<span class="iconSymbol icon__go icon-go"></span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title" style="color:#fff;">居住详细地址</span>
+					<input id="homeAddressdetCat2" class="item-input" type="text" placeholder="请输入详细地址" readonly="readonly">
+				</div>
+			</div>
+			<div class="app-handle-box">
+				<span id="addHandleCat" class="add">添加</span>
+				<span id="reduceHandleCat">删除</span>
+			</div>
+		</div>
+		<div class="footer">
+			<!--<span id="pre">上一步</span>-->
+			<span id="next">下一步</span> 
+			<!--<span id="next">签署进度</span>-->  
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.poppicker.js"></script>
+		<script type="text/javascript" src="../../js/core/commonData.js"></script>
+		<script type="text/javascript" src="../../js/core/cityData.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('details/appInfo');
+		</script>
+	</body>
+</html>
+

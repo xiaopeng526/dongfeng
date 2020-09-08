@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>公告详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/noticeList.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">公告详情</h1>
+	</header>
+	<div class="mui-content">
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/dropload.min.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Notice/noticeDetail');
+	</script>
+</body>
+</html>

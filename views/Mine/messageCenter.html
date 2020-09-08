@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>安全设置</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/mine.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">安全设置</h1>
+	</header>
+	<div class="mui-content">
+		<ul class="list">
+			<li>
+				<label> 联系电话修改</label>
+				<i class="iconSymbol icon__go"></i>
+			</li>
+			<li>
+				<label> 密码修改</label>
+				<i class="iconSymbol icon__go"></i>
+			</li>
+		</ul>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Mine/Mine');
+	</script>
+</body>
+</html>

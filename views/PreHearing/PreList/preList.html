@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>申请待办列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../../../css/base.css">
+		<link rel="stylesheet" href="../../../css/controller/conSignList.css">   
+		<script src="../../../js/common/standdardSize.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a>
+			<h1 class="mui-title">申请待办列表</h1>
+			<div class="nav-bar-icon">
+				<i id="searchIcon" class="iconSymbol icon__search"></i>
+				<i id="bell" class="iconSymbol icon__info"></i>
+			</div>
+		</header>
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll mui-flex">
+						<a href="javascript:;" class="mui-control-item mui-active">全部<span></span></a>
+						<a href="javascript:;" class="mui-control-item">录入中<span></span></a>
+						<a href="javascript:;" class="mui-control-item">签署中<span></span></a>
+						<a href="javascript:;" class="mui-control-item">审贷打回<span></span></a>
+						<a href="javascript:;" class="mui-control-item">处理中<span></span></a>
+					</div>
+				</div>	
+			</div>
+			<div id="conSingList">
+				<ul class="table-view">
+					<!-- <li class="table-view-cell">
+						<div class="flex">
+							<span class="fontColor font26">2219042400008</span>
+							<time class="fontColor font26">2019/05/15 12:02</time>
+						</div>
+						<div class="flex go-detail">
+							<span class="name">李梅</span>
+							<div class="price">
+								<p>贷款金额 <small> 6000 </small> 元</p>
+								<p>508 1.8T 3级自动挡</p>
+							</div>
+							<i class="iconSymbol icon__go"></i>
+						</div>
+						<div class="flex">
+							<span class="status font24 text-right">信贷审核中</span> 
+						</div>
+					</li>
+					<li class="table-view-cell">
+						<div class="flex">
+							<span class="fontColor font26">2219042400008</span>
+							<time class="fontColor font26">2019/05/15 12:02</time>
+						</div>
+						<div class="flex">
+							<span class="name min-name">迪丽热巴巴巴</span>
+							<div class="price">
+								<p>贷款金额 <small> 6000 </small> 元</p>
+								<p>508 1.8T 3级自动挡</p>
+							</div>
+							<i class="iconSymbol icon__go"></i>
+						</div>
+						<div class="flex">
+							<p class="fontColor font24 more">
+								<i class="iconSymbol icon__dorp"></i>  更多操作
+							</p>
+							<a class="btn fontColor font24" href="javascript:;">编辑</a>
+							<span class="status fontColor font24">信贷审核中</span> 
+						</div>
+						<div>
+							<a class="btn fontColor font24" href="javascript:;">合同签署</a>
+							<a class="btn fontColor font24" href="javascript:;">发送邮件</a>
+						</div>
+					</li>
+					<li class="table-view-cell">
+						<div class="flex">
+							<span class="fontColor font26">2219042400008</span>
+							<time class="fontColor font26">2019/05/15 12:02</time>
+						</div>
+						<div class="flex">
+							<span class="name">迪丽热</span>
+							<div class="price">
+								<p>贷款金额 <small> 6000 </small> 元</p>
+								<p>508 1.8T 3级自动挡</p>
+							</div>
+							<i class="iconSymbol icon__go"></i>
+						</div>
+						<div class="flex">
+							<p class="fontColor font24 more">
+								<i class="iconSymbol icon__dorp"></i>  更多操作
+							</p>
+							<a class="btn fontColor font24" href="javascript:;">编辑</a>
+							<span class="status fontColor font24">信贷审核中</span> 
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		<script src="../../../js/common/mui.min.js" ></script>
+		<script src="../../../js/common/jquery-1.12.0.min.js" ></script>
+		<script src="../../../js/common/dropload.min.js"></script>
+		<script src="../../../js/core/sea.js"></script>
+		<script src="../../../js/common/vconsole.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../../js/controller/"
+			});
+			seajs.use('PreHearing/preList');
+		</script>
+	</body>
+</html>

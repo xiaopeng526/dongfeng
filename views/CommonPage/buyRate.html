@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>购置税</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/weui.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignInfo.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+	<script src="../../js/common/zepto.min.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title" id="title">购置税</h1>
+	</header>
+	<div class="mui-bar mui-bar-footer">
+		<a id="submit" href="javascript:;">保存</a>
+	</div>
+	<div class="mui-content">
+		<ul class="info buy-rate">
+			<li>
+				<label>增融品种</label>
+				<input type="text" placeholder="请选择" readonly="readonly" id="zrType">
+				<i class="iconSymbol icon__go"></i>
+			</li>
+			<li>
+				<label>金额</label>
+				<input type="text" placeholder="请输入金额" id="money"> 元
+			</li>
+			<li>
+				<label>申请期限</label>
+				<span id="applyTnr"></span> 期 
+			</li>
+			<li>
+				<label>执行利率</label>
+				<span id="zhixinglv"></span>  %
+			</li>
+		</ul>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/jweixin-1.0.0.js" ></script>
+	<script src="../../js/common/weui.min.js" ></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('CommonPage/buyRate');
+	</script>
+</body>
+</html>

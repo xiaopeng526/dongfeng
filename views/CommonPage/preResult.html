@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">   
+	<title>预审结论</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/mui.picker.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/preResult.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-icon mui-pull-left" id="back"></a>
+		<h1 class="mui-title">预审结论</h1>
+	</header>
+	<div class="mui-bar mui-bar-footer mui-text-center">
+		<a id="submit" class="mui-text-center" href="javascript:;">预审补录</a>
+	</div>
+	<div class="mui-content">
+		<div class="pre-result">
+			<div class="pre-result-head mui-text-center circle"></div>
+			<div class="pre-result-body flex">
+				<div class="mui-text-center">
+					<span class="custom">客户意向贷款金额</span>
+					<p id="applyAmt" class="custom">0.00 元</p>
+					<span class="mastor">官方建议贷款额度</span>
+					<p id="adviselimit" class="mastor">000 元</p>
+				</div>
+				<div class="mui-text-center">
+					<span class="custom">客户意向首付比例</span>
+					<p id="firstScale" class="custom">0.00%</p>
+					<span class="mastor">官方建议首付比例</span>
+					<p id="advisepct" class="mastor">0.00 %</p>
+				</div>
+			</div>
+			<div class="pre-result-foot circle">
+				<p class="advice">预审建议</p>
+				<div class="appConclusion">
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<p class="tips mui-text-center">最终结果以实际车辆价格、金融方案审批为准</p> 
+	</div>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('CommonPage/preResult');
+	</script>
+</body>
+</html>

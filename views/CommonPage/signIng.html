@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+	<head>    
+		<meta charset="UTF-8">    
+		<title>征信授权</title>      
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">  
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/dropload.css">
+		<link rel="stylesheet" href="../../css/controller/sign.css"></link>
+	</head>   
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span> 
+			<span class="title">征信授权</span>   
+			<span class="iconSymbol icon__refresh" id="refresh"></span>  
+		</header>
+		<div class="content" id="refreshContainer">
+			<div class="state"></div>
+			<div class="content2">
+			<div class="appInfo" id="appInfo">
+				<!--<div class="app-box">
+					<span class="app-code"></span> 
+					<span class="app-header">主借人签名</span>
+					<ul class="app-main" id="appMain">
+						<li>
+							<span class="main-title">姓<em>姓名</em>名</span>
+							<span class="main-content">李白</span>
+						</li>
+						<li>
+							<span class="main-title">手机号码</span>
+							<span class="main-content">13613430376</span>
+							<span class="iconSymbol icon__tel"></span>
+						</li>
+						<li>
+							<span class="main-title">发起时间</span>
+							<span class="main-content">2019-04-28 09:30:14</span>
+						</li>
+						<li>
+							<span class="main-title">完成时间</span>
+							<span class="main-content">2019-04-28 09:30:14</span>
+						</li>
+						<li>
+							<span class="main-title">状<em>状态</em>态</span>
+							<span class="main-content red">超时</span>
+							<span class="iconSymbol icon__why red"></span>
+						</li>
+					</ul>
+				</div>-->	
+			</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="stop">终止签署</span> 
+			<span id="pre" style="display: none;">上一步</span> 
+			<span id="sign" style="display: none;">在线签署</span>
+			<span id="back" style="display: none;">返回</span>
+			<span id="see" style="display: none;">查看</span>
+			<span id="sub" style="display: none;">下一步</span>
+		</div> 
+		<div class="waiting-box" style="display: none;" id="waitingBox">
+			<div class="loading-bdg2"></div> 
+			<div id="code" style="display: none;">    
+				<div class="code-box">     
+					<div class="qr-code" id="qrCode"></div>
+					<div class="code-info" id="codeInfo"></div>
+					<div class="code-tip">扫一扫上方二维码快速签署</div> 	
+				</div>
+				<div class="code-footer"> 
+					<span class="iconSymbol icon__close" id="close"></span>
+				</div> 
+			</div>
+			
+			<div id="tel" style="display: none;"> 
+				<div class="tel-box">
+					<div class="tel-main">
+						是否呼叫 <span id="telNum"></span>
+					</div>
+					<div class="tel-footer">
+						<a id="cancel" href="javascript:;">取消</a>
+						<a id="call" href="">拨号</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="waiting-box" style="display: none;" id="waitingBox2">   
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在疯狂加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script> 
+		<script type="text/javascript" src="../../js/common/jquery.qrcode.min.js"></script>
+		<script type="text/javascript" src="../../js/core/dropload.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('CommonPage/signIng');
+		</script>
+	</body>
+</html>
+

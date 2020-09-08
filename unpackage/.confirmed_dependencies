@@ -1,0 +1,3615 @@
+{
+  "html/proInfo.html": {
+    "href": "html/proInfo.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common.js",
+      "imgs/icons_star.png",
+      "css/self_base.css"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/personalInfo.html": {
+    "href": "html/personalInfo.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/jquery-1.11.1.min.js",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "imgs/icons_star.png",
+      "css/self_base.css"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/friendInfo.html": {
+    "href": "html/friendInfo.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common.js",
+      "imgs/icons_star.png",
+      "css/self_base.css",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/changePwd.html": {
+    "href": "html/changePwd.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "css/self_base.css"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/changePh.html": {
+    "href": "html/changePh.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "imgs/icons_hr.png",
+      "imgs/icons_user.png",
+      "imgs/icons_home.png",
+      "imgs/icons_money_bag_active.png",
+      "fonts/mui.ttf",
+      "css/self_base.css"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/changeInfo.html": {
+    "href": "html/changeInfo.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "imgs/user.png",
+      "fonts/mui.ttf",
+      "js/qiao.js",
+      "js/jquery-1.11.1.min.js",
+      "imgs/icons_occupation.png",
+      "imgs/icons_contact.png",
+      "imgs/icons_self.png",
+      "imgs/icons_hr.png",
+      "imgs/icons_home.png",
+      "imgs/icons_money_bag.png",
+      "css/self_base.css",
+      "imgs/icons_user_active.png",
+      "imgs/icons_home_active.png",
+      "imgs/icons_user.png",
+      "imgs/icons_money_bag_active.png",
+      "imgs/icons_hr_active.png",
+      "js/canvasResize.js",
+      "js/exif.js",
+      "js/binaryajax.js",
+      "js/prototype.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [
+      "html/proInfo.html",
+      "html/personalInfo.html",
+      "html/friendInfo.html",
+      "html/changePwd.html",
+      "html/changePh.html"
+    ],
+    "priority": 0
+  },
+  "html/messageCenter.html": {
+    "href": "html/messageCenter.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/myOrder.html": {
+    "href": "html/myOrder.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "css/self_base.css",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/myLoan.html": {
+    "href": "html/myLoan.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/bootstrap.min.css",
+      "js/mui.min.js",
+      "js/angular.min.js",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "css/self_base.css",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [
+      "html/detail/loan_detail.html"
+    ],
+    "priority": 0
+  },
+  "html/setPwd.html": {
+    "href": "html/setPwd.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/common.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/firstLogin.html": {
+    "href": "html/firstLogin.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.enterfocus.js",
+      "js/app.js",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "css/self_base.css"
+    ],
+    "refer": [
+      "html/setPwd.html"
+    ],
+    "priority": 0
+  },
+  "html/login.html": {
+    "href": "html/login.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.enterfocus.js",
+      "js/app.js",
+      "imgs/VerifyImage.jpg",
+      "js/common.js",
+      "fonts/mui.ttf",
+      "css/self_base.css",
+      "imgs/login_user.png",
+      "imgs/login_pwd.png",
+      "js/plugins/pgkeyboard/plugin-pgkeyboard.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [
+      "html/firstLogin.html",
+      "index.html",
+      "html/forget_password.html"
+    ],
+    "priority": 0
+  },
+  "html/chooseLogin.html": {
+    "href": "html/chooseLogin.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "html/login.html",
+      "html/firstLogin.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/angular.min.js",
+      "imgs/logo.png",
+      "imgs/erweima.png",
+      "imgs/jk.png",
+      "imgs/ml.png",
+      "imgs/jj.png",
+      "imgs/jy.png",
+      "imgs/hq.png",
+      "imgs/cy.png",
+      "imgs/user.png",
+      "imgs/yuantiao.jpg",
+      "imgs/shuijiao.jpg",
+      "imgs/muwu.jpg",
+      "imgs/cbd.jpg",
+      "fonts/mui.ttf",
+      "js/common.js",
+      "css/self_base.css",
+      "imgs/hr_logo.png",
+      "imgs/icons_my_loan.png",
+      "imgs/icons_tips.png",
+      "imgs/banner_txt.png",
+      "imgs/right_kh.png",
+      "imgs/icons_loan.png",
+      "imgs/icons_repayment.png",
+      "imgs/icons_record.png",
+      "imgs/banner.png",
+      "imgs/hr_list.png",
+      "imgs/icons_progress.png",
+      "imgs/two_code.png",
+      "imgs/hr_message.png",
+      "imgs/icons_more.png",
+      "imgs/left_kh.png",
+      "imgs/icons_hr.png",
+      "imgs/icons_share.png",
+      "imgs/education.png",
+      "imgs/travel.png",
+      "imgs/icons_about.png",
+      "imgs/icons_idea.png",
+      "imgs/icons_home_active.png",
+      "imgs/icons_user.png",
+      "imgs/icons_money_bag.png",
+      "imgs/geek.png",
+      "imgs/beauty.png",
+      "imgs/icons_chat.png",
+      "imgs/icons_automatic_payment.png",
+      "imgs/icons_change_info.png",
+      "imgs/icons_home.png",
+      "imgs/icons_money_bag_active.png",
+      "imgs/icons_user_active.png",
+      "imgs/icons_hr_active.png",
+      "imgs/icons_exit.png",
+      "imgs/img3.png",
+      "imgs/img1.png",
+      "imgs/img5.png",
+      "imgs/weChat.jpg",
+      "imgs/happy_borrow.png",
+      "imgs/home_loans.png",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js",
+      "imgs/company.png",
+      "imgs/newguid.png",
+      "js/messageCenter.js",
+      "imgs/weChat.png"
+    ],
+    "refer": [
+      "html/changeInfo.html",
+      "html/messageCenter.html",
+      "html/myOrder.html",
+      "html/myLoan.html",
+      "html/chooseLogin.html",
+      "html/query_progress.html",
+      "html/firstLogin.html",
+      "html/login.html",
+      "html/detail/productDetail.html",
+      "html/detail/weChat_public_no.html",
+      "html/detail/share_page.html",
+      "html/guide.html",
+      "html/new_guide.html",
+      "html/mainPayPlan.html",
+      "html/product_list.html",
+      "html/productList.html"
+    ],
+    "priority": 0
+  },
+  "html/guide.html": {
+    "href": "html/guide.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "imgs/1.png",
+      "imgs/2.png",
+      "imgs/3.png",
+      "imgs/4.png",
+      "imgs/5.png",
+      "imgs/2.jpg",
+      "imgs/1.jpg",
+      "imgs/3.jpg",
+      "imgs/4.jpg"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "html/detail/loan_detail.html": {
+    "resources": [
+      "css/self_base.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "imgs/icons_hr.png",
+      "imgs/icons_home.png",
+      "imgs/icons_money_bag.png",
+      "imgs/icons_user_active.png",
+      "imgs/icons_home_active.png",
+      "imgs/icons_user.png",
+      "imgs/icons_money_bag_active.png",
+      "imgs/icons_hr_active.png",
+      "js/common.js"
+    ],
+    "refer": [
+      "html/detail/payPlan.html"
+    ]
+  },
+  "html/query_progress.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css",
+      "js/common.js",
+      "css/bootstrap.min.css",
+      "js/jquery-1.11.1.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": [
+      "html/detail/progress_status.html"
+    ]
+  },
+  "html/detail/progress_status.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css"
+    ],
+    "refer": []
+  },
+  "html/detail/payPlan.html": {
+    "resources": [
+      "js/common.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css"
+    ],
+    "refer": []
+  },
+  "html/detail/productDetail.html": {
+    "resources": [
+      "imgs/icons_home_active.png",
+      "imgs/icons_hr.png",
+      "imgs/icons_user.png",
+      "imgs/icons_home.png",
+      "fonts/mui.ttf",
+      "imgs/icons_money_bag.png",
+      "css/self_base.css",
+      "imgs/travel.png",
+      "js/productDetail/productDetail.js",
+      "imgs/mui-down.png",
+      "imgs/mui-up.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "imgs/icons_hr_active.png",
+      "imgs/icons_user_active.png",
+      "imgs/head_user.png",
+      "imgs/userPhoto.png",
+      "imgs/lending.png",
+      "imgs/service.png",
+      "imgs/contact.png",
+      "imgs/text-lines.png",
+      "imgs/progress_sj.png",
+      "imgs/happy_borrow.png",
+      "imgs/home_loans.png",
+      "imgs/education.png",
+      "imgs/geek.png",
+      "imgs/beauty.png"
+    ],
+    "refer": [
+      "html/appLoan/personInfo.html",
+      "html/appLoan/applyIndex.html"
+    ]
+  },
+  "html/detail/weChat_public_no.html": {
+    "resources": [
+      "imgs/weChat.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css",
+      "imgs/weChat.jpg",
+      "imgs/hr_logo.png"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "html/detail/share_page.html": {
+    "resources": [
+      "imgs/icon_circle_of_friends.png",
+      "imgs/icon_weChat.png",
+      "imgs/icon_sina.png",
+      "js/mui.min.js",
+      "imgs/weChat.png",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "imgs/share_more.png",
+      "imgs/icon_qq.png",
+      "css/self_base.css",
+      "imgs/liantu.png",
+      "imgs/hr_logo.png"
+    ],
+    "refer": []
+  },
+  "html/forget_password.html": {
+    "resources": [
+      "js/app.js",
+      "imgs/icons_home.png",
+      "imgs/icons_money_bag_active.png",
+      "imgs/icons_hr.png",
+      "imgs/icons_user.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css",
+      "js/common.js"
+    ],
+    "refer": []
+  },
+  "html/new_guide.html": {
+    "resources": [
+      "js/app.js",
+      "imgs/stepTwoPic.png",
+      "imgs/stepSixPic.png",
+      "imgs/step_mine.png",
+      "imgs/stepFourPic.png",
+      "imgs/stepEightPic.png",
+      "css/self_base.css",
+      "js/mui.enterfocus.js",
+      "imgs/stepSevenPic.png",
+      "imgs/step_myloan.png",
+      "js/common.js",
+      "imgs/phoneModel.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "imgs/phoneModel2.png",
+      "imgs/step_chart.png",
+      "imgs/step_success.png",
+      "imgs/stepFivePic.png",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "html/appLoan/personInfo.html": {
+    "resources": [
+      "imgs/icons_star.png",
+      "imgs/icons_contacts.png",
+      "js/common.js",
+      "js/appLoan/personInfo.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mui.min.js",
+      "imgs/icons_camera.png",
+      "fonts/mui.ttf",
+      "imgs/icons_record.png",
+      "css/mui.min.css",
+      "js/mbank.core.js",
+      "css/self_base.css",
+      "imgs/icons_apply_result.png"
+    ],
+    "refer": []
+  },
+  "html/appLoan/applyIndex.html": {
+    "resources": [
+      "js/common.js",
+      "js/appLoan/applyIndex.js",
+      "imgs/icons_contacts.png",
+      "js/jquery-1.11.1.min.js",
+      "imgs/icons_camera.png",
+      "imgs/icons_record.png",
+      "js/mbank.core.js",
+      "imgs/icons_apply_result.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/self_base.css",
+      "js/appLoan/personInfo.js"
+    ],
+    "refer": [
+      "html/appLoan/applyBasicInfo.html"
+    ]
+  },
+  "html/mainPayPlan.html": {
+    "resources": [
+      "js/common.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mbank.core.js",
+      "css/self_base.css"
+    ],
+    "refer": []
+  },
+  "html/product_list.html": {
+    "resources": [
+      "imgs/travel.png",
+      "imgs/happy_borrow.png",
+      "imgs/home_loans.png",
+      "imgs/education.png",
+      "imgs/beauty.png",
+      "imgs/geek.png",
+      "js/common.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mbank.core.js",
+      "css/self_base.css"
+    ],
+    "refer": []
+  },
+  "html/productList.html": {
+    "resources": [
+      "css/self_base.css",
+      "js/common.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mui.min.js",
+      "js/mbank.core.js"
+    ],
+    "refer": []
+  },
+  "views/index.html": {
+    "resources": [
+      "images/icons_product.png",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "images/icons_home_active.png",
+      "css/style.css",
+      "js/controller/index.js",
+      "js/common/sea.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "views/main/main.html",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "images/icons_product_active.png",
+      "images/icons_company.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/area.js",
+      "images/icons_personalCenter.png",
+      "images/icons_personalCenter_active.png",
+      "images/icons_company_active.png",
+      "images/logo.png",
+      "dfImages/df_main_active.png",
+      "dfImages/df_query.png",
+      "dfImages/df_my.png",
+      "dfImages/df_loan.png",
+      "dfImages/df_main.png",
+      "dfImages/df_loan_active.png",
+      "dfImages/df_my_active.png",
+      "dfImages/df_query_active.png",
+      "views/personalCenter/myCenter.html",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "views/loanMan/loanManList.html",
+      "js/core/dfCommon.js",
+      "views/HomePage/homePage.html"
+    ],
+    "refer": [
+      "views/main/main.html",
+      "views/personalCenter/personalCenter.html",
+      "views/product/product.html",
+      "views/company/company.html",
+      "views/login/login.html",
+      "views/userMan/userMan.html",
+      "views/personalCenter/myCenter.html",
+      "views/loanMan/loanManList.html",
+      "views/loanQuery/loanQuery.html",
+      "views/loanInquiry/loanInquiry.html",
+      "views/loanMan/loanManList_top.html",
+      "views/loanMan/loanManListTop.html",
+      "views/HomePage/homePage.html",
+      "views/PreHearing/NewPre/loanPre.html",
+      "views/login.html"
+    ]
+  },
+  "views/main/main.html": {
+    "resources": [
+      "images/icons_loan2.png",
+      "fonts/mui.ttf",
+      "images/icons_progress.png",
+      "images/icons_loan.png",
+      "images/banner1.png",
+      "images/icons_home_pro3.png",
+      "images/icons_home_pro1.png",
+      "images/icons_home_pro2.png",
+      "images/logo.png",
+      "images/product_pic.png",
+      "images/calculate.png",
+      "js/controller/main/main.js",
+      "images/icons_message.png",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "css/style.css",
+      "css/mui.min.css",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_repayment.png",
+      "images/icons_more.png",
+      "dfImages/df_calculator.png",
+      "dfImages/df_banner01.png",
+      "dfImages/df_orders.png",
+      "dfImages/df_logo.png",
+      "dfImages/df_radio.png",
+      "dfImages/df_contract.png",
+      "dfImages/df_apply.png",
+      "js/common/common.js",
+      "dfImages/dc_banner02.jpg",
+      "dfImages/dc_banner01.jpg",
+      "dfImages/dc_banner03.jpg",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js"
+    ],
+    "refer": [
+      "views/main/loan_trial.html",
+      "views/personalCenter/query_prograss.html",
+      "views/msg/messageCenter.html",
+      "views/personalCenter/myloan.html",
+      "views/loan/carInfo.html",
+      "views/main/loanTrial.html",
+      "views/login/login.html",
+      "views/loanInquiry/contractInquiry.html",
+      "views/loanMan/bankChe.html",
+      "views/loanInquiry/wantToPickUp.html",
+      "views/contract/contractQuery.html",
+      "views/messages/msg_list.html"
+    ]
+  },
+  "views/personalCenter/personalCenter.html": {
+    "resources": [
+      "images/personalCenter_bg.png",
+      "images/icons_person_about.png",
+      "images/icons_person_loan2.png",
+      "images/icons_person_repayment.png",
+      "images/touxiang.png",
+      "images/icons_person_guide.png",
+      "js/controller/personalCenter/personalCenter.js",
+      "images/icons_person_accChange.png",
+      "images/icons_person_progress.png",
+      "images/icons_setSafe.png",
+      "images/notouxiang.png",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/personalCenter/myloan.html",
+      "views/personalCenter/aboutCompany.html",
+      "views/personalCenter/setSafe.html",
+      "views/login/login.html",
+      "views/personalCenter/query_prograss.html",
+      "views/personalCenter/repaymentAccountList.html",
+      "views/personalCenter/initiativeRepayment.html",
+      "views/personalCenter/personMsg.html",
+      "views/personalCenter/newGuide.html"
+    ]
+  },
+  "views/product/product.html": {
+    "resources": [
+      "js/controller/product/product.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/product/product_detail.html"
+    ]
+  },
+  "views/company/company.html": {
+    "resources": [
+      "js/controller/company/company.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/login/login.html": {
+    "resources": [
+      "images/exit_login.png",
+      "css/login.css",
+      "images/icons_pwd.png",
+      "images/login_bg.png",
+      "js/controller/login/login.js",
+      "images/icons_user.png",
+      "js/common/mui.enterfocus.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "images/logo.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/plugins/pgkeyboard/plugin-pgkeyboard.js",
+      "js/common/mui.js",
+      "dfImages/loginBottom.png",
+      "dfImages/loginPic.png",
+      "css/style.css",
+      "dfImages/my_06.png",
+      "js/common/plugin-pgkeyboard.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/style_login.css",
+      "js/common/plugin-login.js",
+      "js/common/plugin-passguard.js"
+    ],
+    "refer": [
+      "views/login/reg.html",
+      "views/login/accountActive.html",
+      "views/personalCenter/myCenter.html",
+      "views/index.html",
+      "views/login/checkMobileCode.html",
+      "views/login/forgetPassword.html",
+      "views/personalCenter/changePwd.html",
+      "views/guide.html",
+      "views/messages/message_sub.html",
+      "views/messages/pullrefresh_sub.html",
+      "views/messages/pullrefresh_main.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/product/product_detail.html": {
+    "resources": [
+      "js/controller/product/product_detail.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/loanApply/applyIndex.html"
+    ]
+  },
+  "views/loanApply/applyIndex.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "images/icon_basic_info.png",
+      "fonts/mui.ttf",
+      "images/icon_other_info.png",
+      "css/style.css",
+      "images/icon_loan_info.png",
+      "js/controller/loanApply/applyIndex.js",
+      "js/common/common.js",
+      "images/icon_upload_file.png",
+      "js/common/mbank.core.js",
+      "images/calculate.png",
+      "images/icon_rel_info.png",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/loanApply/applyLoanInfo.html",
+      "views/loanApply/applyBasicInfo.html",
+      "views/loanApply/applyOtherInfo.html",
+      "views/loanApply/applyUploadFile.html",
+      "views/loanApply/applyLoanInfoShow.html"
+    ]
+  },
+  "views/loanApply/applyLoanInfo.html": {
+    "resources": [
+      "js/common/mui.picker.min.js",
+      "js/controller/loanApply/applyLoanInfo.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/loanApply/applyBasicInfo.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/main/loan_trial.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "images/calculate.png",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/myloan.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "js/controller/personalCenter/myloan.js",
+      "fonts/mui.ttf",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/personalCenter/loan_detail.html"
+    ]
+  },
+  "views/personalCenter/aboutCompany.html": {
+    "resources": [
+      "js/controller/personalCenter/changePwd.js",
+      "js/plugins/pgkeyboard/plugin-pgkeyboard.js",
+      "js/common/mui.min.js",
+      "images/banner1.png",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/setSafe.html": {
+    "resources": [
+      "js/common/mui.view.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/controller/personalCenter/setSafe.js",
+      "js/common/app.js",
+      "images/icon_setSafe_psd.png",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/icon_setSafe_rel.png",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icon_setSafe_reg.png",
+      "css/login.css",
+      "css/safeset.css",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/personalCenter/personRegMessage.html",
+      "views/personalCenter/changePwd.html",
+      "views/personalCenter/contPhoneChange.html",
+      "views/personalCenter/policy.html"
+    ]
+  },
+  "views/personalCenter/query_prograss.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "js/controller/personalCenter/query_progress.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/loanApply/applyIndex.html",
+      "views/login/login.html",
+      "views/personalCenter/loan_detail.html"
+    ]
+  },
+  "views/msg/messageCenter.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/controller/msg/messageCenter.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js",
+      "views/msg/messageCenter_sub.html",
+      "js/controller/msg/messageCenter_sub.js"
+    ],
+    "refer": [
+      "views/msg/notice.html",
+      "views/msg/messageCenter_sub.html"
+    ]
+  },
+  "views/msg/notice.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "js/common/common.js",
+      "js/controller/msg/notice.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/loanApply/applyBasicInfo.html": {
+    "resources": [
+      "js/controller/loanApply/applyBasicInfo.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/loanApply/applyOtherInfo.html"
+    ]
+  },
+  "views/loanApply/applyOtherInfo.html": {
+    "resources": [
+      "js/controller/loanApply/applyOtherInfo.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png"
+    ],
+    "refer": [
+      "views/loanApply/applyRelInfo.html"
+    ]
+  },
+  "views/loanApply/applyRelInfo.html": {
+    "resources": [
+      "js/controller/loanApply/applyRelInfo.js"
+    ],
+    "refer": [
+      "views/loanApply/applyUploadFile.html"
+    ]
+  },
+  "views/loanApply/applyUploadFile.html": {
+    "resources": [
+      "js/controller/loanApply/applyUploadFile.js",
+      "js/common/canvasResize.js",
+      "images/login_checked.png"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/personRegMessage.html": {
+    "resources": [
+      "js/controller/personalCenter/personRegMessage.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/login/reg.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/reg.css",
+      "css/style.css",
+      "js/controller/login/reg.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/login/accountActive.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/reg.css",
+      "css/mui.min.css",
+      "js/controller/login/accountActive.js"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/repaymentAccountList.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "js/controller/personalCenter/repaymentAccountList.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/personalCenter/initiativeRepayment.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/common/iscroll.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/controller/personalCenter/initiativeRepayment.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/personalCenter/initiativeRepaymentDetail.html"
+    ]
+  },
+  "views/personalCenter/loan_detail.html": {
+    "resources": [
+      "js/controller/personalCenter/loan_detail.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/loanApply/applyIndex.html"
+    ]
+  },
+  "views/personalCenter/changePwd.html": {
+    "resources": [
+      "images/icons_pwdChangeNewT.png",
+      "js/controller/personalCenter/changePwd.js",
+      "images/icons_pwdChangeOld.png",
+      "css/reg.css",
+      "images/icons_pwdChangeNew.png",
+      "js/plugins/pgkeyboard/plugin-pgkeyboard.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "css/login.css",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/common/plugin-pgkeyboard.js",
+      "js/common/plugin-passguard.js",
+      "js/common/plugin-login.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/personalCenter/personMsg.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "js/controller/personalCenter/personMsg.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/personalCenter/initiativeRepaymentDetail.html": {
+    "resources": [
+      "js/controller/personalCenter/initiativeRepaymentDetail.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/newGuide.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/common/iscroll.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/personalCenter/newGuide.js"
+    ],
+    "refer": []
+  },
+  "views/loanApply/applyLoanInfoShow.html": {
+    "resources": [
+      "js/controller/loanApply/applyLoanInfoShow.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loan/applyBasicInfo.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/controller/loanApply/applyBasicInfo.js",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/applyBasicInfo.js",
+      "dfImages/df_add.png",
+      "dfImages/df_right.png",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "js/common/mui.dtpicker.js",
+      "css/mui.dtpicker.css",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/common/plugin-openIdcardScan.js",
+      "js/common/binaryajax.js",
+      "js/common/canvasResize.js",
+      "js/common/exif.js",
+      "js/common/plugin-openLiveness.js",
+      "dfImages/df_reduce.png",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/mui.picker.min.css",
+      "css/new_apply.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/photo.png",
+      "dfImages/icon_C_help.png",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loan/applyCompanyInfo.html",
+      "views/loan/salesrepInfo.html",
+      "views/loan/authentication.html",
+      "views/messages/message.html",
+      "views/index.html"
+    ]
+  },
+  "views/loan/salesrepInfo.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/salesrepInfo.js",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "css/loanapply.css",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loan/applyBasicInfo.html",
+      "views/loan/loanInfo.html",
+      "views/login/login.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/userMan/userMan.html": {
+    "resources": [
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/common/common.js"
+    ],
+    "refer": []
+  },
+  "views/personalCenter/myCenter.html": {
+    "resources": [
+      "images/personalCenter_bg.png",
+      "images/icons_person_about.png",
+      "images/icons_person_loan2.png",
+      "fonts/mui.ttf",
+      "images/icons_person_repayment.png",
+      "images/touxiang.png",
+      "images/icons_person_guide.png",
+      "js/controller/personalCenter/personalCenter.js",
+      "images/icons_person_accChange.png",
+      "images/icons_person_progress.png",
+      "images/icons_setSafe.png",
+      "images/notouxiang.png",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/personalCenter/myCenter.js",
+      "dfImages/my_06.png",
+      "dfImages/my_01.png",
+      "dfImages/my_04.png",
+      "dfImages/my_bg.png",
+      "dfImages/my_03.png",
+      "dfImages/my_02.png",
+      "dfImages/my_radio.png",
+      "dfImages/my_header_03.png",
+      "dfImages/my_header_02.png",
+      "js/core/bank.js",
+      "js/core/nativeUI.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/style_dfiLoan.css",
+      "dfImages/my_header_04.png",
+      "dfImages/loanman.jpg"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/personalCenter/setSafe.html",
+      "views/msg/messageCenter.html",
+      "views/loanMan/loanManList_top.html",
+      "views/personalCenter/commonProblem.html",
+      "views/loanMan/loanManListTop.html",
+      "views/loanMan/loanManList.html",
+      "views/messages/msg_list.html"
+    ]
+  },
+  "views/personalCenter/contPhoneChange.html": {
+    "resources": [
+      "js/controller/personalCenter/contPhoneChange.js",
+      "css/reg.css",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/login.css",
+      "js/common/mui.min.js",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/index.html"
+    ]
+  },
+  "views/msg/messageCenter_sub.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/msg/messageCenter_sub.js"
+    ],
+    "refer": [
+      "views/msg/msgDetails.html"
+    ]
+  },
+  "views/loan/carInfo.html": {
+    "resources": [
+      "images/login_checked.png",
+      "js/common/mui.picker.min.js",
+      "css/base.css",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "images/icons_home.png",
+      "js/controller/loan/carInfo.js",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "dfImages/car_01.png",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "js/common/checkcar.js",
+      "js/common/mui.dtpicker.js",
+      "css/mui.dtpicker.css",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "css/new_apply.css",
+      "dfImages/icon_back2.png",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loan/loanInfo.html",
+      "views/index.html",
+      "views/loanMan/loanManState.html",
+      "views/loanMan/loanManList.html",
+      "views/messages/message.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/loan/loanInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/loanInfo.js",
+      "js/common/area.js",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "js/common/mui.dtpicker.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back.png",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loan/salesrepInfo.html",
+      "views/loan/carInfo.html",
+      "views/loan/insuranSupmet.html",
+      "views/index.html",
+      "views/login/login.html",
+      "views/loan/purchaseTax.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/msg/msgDetails.html": {
+    "resources": [
+      "js/common/iscroll.js",
+      "css/base.css",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/controller/msg/msgDetails.js",
+      "js/common/mui.min.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loan/applyCompanyInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "images/icons_home.png",
+      "fonts/mui.ttf",
+      "js/controller/loan/applyCompanyInfo.js",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "js/common/mui.dtpicker.js",
+      "css/popbox.css",
+      "css/newloan.css",
+      "js/controller/loan/loan.js",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loan/assureBasicInfo.html",
+      "views/loan/jointapplyBasicInfo.html",
+      "views/loan/applyBasicInfo.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loan/assureBasicInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/assureBasicInfo.js",
+      "css/loan.css",
+      "dfImages/df_radio.png",
+      "css/mui.dtpicker.css",
+      "css/loanapply.css",
+      "js/common/mui.dtpicker.js",
+      "js/common/dictionary.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/exif.js",
+      "js/common/plugin-openLiveness.js",
+      "js/common/plugin-openIdcardScan.js",
+      "js/common/binaryajax.js",
+      "js/common/popbox.js",
+      "js/common/canvasResize.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/new_apply.css",
+      "js/common/jquery-1.12.0.min.js",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/style_dfiLoan.css",
+      "dfImages/df_add.png",
+      "dfImages/photo.png",
+      "dfImages/icon_back2.png",
+      "js/common/dfcommon.js",
+      "dfImages/icon_C_help.png"
+    ],
+    "refer": [
+      "views/loan/assureCompanyInfo.html",
+      "views/loan/contactInfo.html",
+      "views/loan/jointapplyCompanyInfo.html",
+      "views/loan/authentication.html",
+      "views/messages/message.html",
+      "views/loan/assureBasicInfo.html"
+    ]
+  },
+  "views/loan/assureCompanyInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/assureCompanyInfo.js",
+      "dfImages/df_radio.png",
+      "css/loan.css",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "js/common/mui.dtpicker.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "dfImages/icon_back.png",
+      "js/core/support.js",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loan/contactInfo.html",
+      "views/loan/assureBasicInfo.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loan/contactInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/controller/loan/contactInfo.js",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "dfImages/df_radio.png",
+      "css/loan.css",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "js/common/mui.dtpicker.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loan/imageInfo.html",
+      "views/loan/assureCompanyInfo.html",
+      "views/login/login.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loan/imageInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "images/icons_home.png",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loan/imageInfo.js",
+      "dfImages/df_radio.png",
+      "css/loan.css",
+      "css/loanapply.css",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/imgInfo.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loan/application.html",
+      "views/index.html",
+      "views/loan/contactInfo.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loanMan/newAppWaiRe.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "js/common/common.js",
+      "js/controller/loanMan/loanManList.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loanMan/loanManList.html": {
+    "resources": [
+      "js/controller/loanMan/loanManList.js",
+      "fonts/mui.ttf",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/area.js",
+      "js/common/mui.min.js",
+      "js/common/mui.view.js",
+      "dfImages/HitBack.png",
+      "dfImages/pending.png",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/mui.picker.min.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/style_dfiLoan.css",
+      "css/loanManList.css"
+    ],
+    "refer": [
+      "views/loanMan/newAppWaiRe.html",
+      "views/loanMan/loanManState.html",
+      "views/login/login.html",
+      "views/messages/msg_list.html"
+    ]
+  },
+  "views/main/loanTrial.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "images/calculate.png",
+      "js/common/mbank.param.js",
+      "css/style.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/main/loanTrial.js",
+      "dfImages/lendersToolBox.png",
+      "js/controller/main/pickCar.js",
+      "css/pickCar.css",
+      "dfImages/df_radio.png",
+      "css/loan.css",
+      "css/loanTrial.css",
+      "css/popbox.css",
+      "js/common/popbox.js",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "css/mui.dtpicker.css",
+      "css/mui.poppicker.css",
+      "css/loanapply.css",
+      "views/main/loanTrial.html",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/common.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "css/mui.picker.min.css",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "dfImages/icon_back2.png",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loanMan/bankChe.html",
+      "views/main/loanTrial.html",
+      "views/main/trialDetail.html"
+    ]
+  },
+  "views/login/checkMobileCode.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/login/checkMobileCode.js",
+      "css/reg.css",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/mui.enterfocus.js",
+      "css/login.css",
+      "css/style.css",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/index.html"
+    ]
+  },
+  "views/login/forgetPassword.html": {
+    "resources": [
+      "js/controller/login/checkMobileCode.js",
+      "css/style.css",
+      "css/base.css",
+      "css/mui.min.css",
+      "js/controller/login/forgetPassword.js",
+      "js/common/mui.min.js",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/mui.enterfocus.js",
+      "css/login.css",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/mui.picker.min.js",
+      "js/common/mui.poppicker.js",
+      "js/core/nativeUI.js",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/login/resetPass.html"
+    ]
+  },
+  "views/login/resetPass.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/login/checkMobileCode.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/mui.min.js",
+      "js/controller/login/resetPass.js",
+      "js/common/common.js",
+      "fonts/mui.ttf",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/mui.enterfocus.js",
+      "css/login.css",
+      "js/common/plugin-pgkeyboard.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/style_dfiLoan.css",
+      "js/common/plugin-passguard.js",
+      "js/common/plugin-login.js"
+    ],
+    "refer": [
+      "views/login/login.html"
+    ]
+  },
+  "views/loanMan/loanManState_sub.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/controller/loanMan/loanManState_sub.js",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loanMan/loanManStateSub.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/contract.css",
+      "css/style_dfiLoan.css",
+      "fonts/mui.ttf",
+      "js/common/dfcommon.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/loan/jointapplyBasicInfo.html",
+      "views/loan/imageInfo.html",
+      "views/loan/carInfo.html",
+      "views/loanMan/carInfoEur.html",
+      "views/loan/application.html",
+      "views/loanMan/loanInfoUpload.html",
+      "views/loan/applyBasicInfo.html",
+      "views/loanInquiry/loanDetails.html",
+      "views/loan/contactInfo.html",
+      "views/loanMan/uploadLoan.html",
+      "views/loan/assureBasicInfo.html",
+      "views/messages/message.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/loanMan/loanManState.html": {
+    "resources": [
+      "js/common/mui.picker.min.js",
+      "css/base.css",
+      "js/controller/loanMan/loanManState.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "views/loanMan/loanManState_sub.html",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "css/contract.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/loanManState_sub.html"
+    ]
+  },
+  "views/loan/jointapplyBasicInfo.html": {
+    "resources": [
+      "css/base.css",
+      "css/mui.min.css",
+      "js/controller/loan/jointapplyBasicInfo.js",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "css/loan.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/mui.dtpicker.css",
+      "js/common/mui.dtpicker.js",
+      "css/loanapply.css",
+      "js/common/dictionary.js",
+      "css/newloan.css",
+      "js/common/plugin-openLiveness.js",
+      "js/common/canvasResize.js",
+      "js/common/popbox.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "js/common/exif.js",
+      "js/common/plugin-openIdcardScan.js",
+      "js/common/binaryajax.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/df_add.png",
+      "dfImages/photo.png",
+      "dfImages/icon_back2.png",
+      "js/common/dfcommon.js",
+      "dfImages/icon_C_help.png"
+    ],
+    "refer": [
+      "views/loan/applyCompanyInfo.html",
+      "views/loan/assureBasicInfo.html",
+      "views/loan/jointapplyCompanyInfo.html",
+      "views/loan/contactInfo.html",
+      "views/loan/authentication.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loanInquiry/contractInquiry.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/loanInquiry/contractInquiry.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/common/mui.view.js",
+      "js/common/mui.min.js",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "fonts/mui.ttf",
+      "dfImages/df_radio.png"
+    ],
+    "refer": []
+  },
+  "views/loan/application.html": {
+    "resources": [
+      "js/controller/loan/application.js",
+      "js/common/binaryajax.js",
+      "js/common/canvasResize.js",
+      "js/common/exif.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "dfImages/df_radio.png",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "css/loanapply.css",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/imgsUpload.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/mui.previewimage.js",
+      "css/previewImg.css",
+      "js/common/mui.zoom.js",
+      "dfImages/modify02.png",
+      "dfImages/df_banner01.png",
+      "dfImages/icon_back2.png",
+      "js/common/nativeEve.js"
+    ],
+    "refer": []
+  },
+  "views/loanMan/carInfoEur.html": {
+    "resources": [
+      "css/eur.css",
+      "js/controller/loanMan/carInfoEur.js",
+      "css/loan.css",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loanapply.css",
+      "js/common/checkcar.js",
+      "css/popbox.css",
+      "js/controller/loanMan/loanMan.js",
+      "js/common/popbox.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/quoEur.css",
+      "css/mui.picker.min.css",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back.png",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/repayInfo.html",
+      "views/messages/message.html",
+      "views/index.html"
+    ]
+  },
+  "views/loanMan/repayInfo.html": {
+    "resources": [
+      "css/eur.css",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "js/controller/loanMan/repayInfo.js",
+      "css/mui.picker.css",
+      "css/loan.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/popbox.css",
+      "css/loanapply.css",
+      "js/controller/loanMan/loanMan.js",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/quoEur.css",
+      "css/mui.picker.min.css",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/receivaInfo.html",
+      "views/loanMan/bankChe.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/loanMan/receivaInfo.html": {
+    "resources": [
+      "js/controller/loanMan/receivaInfo.js",
+      "css/eur.css",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "css/loan.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/popbox.css",
+      "css/loanapply.css",
+      "js/controller/loanMan/loanMan.js",
+      "js/common/popbox.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/quoEur.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/bankChe.html",
+      "views/index.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/loanQuery/loanQuery.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/common/mui.view.js",
+      "css/base.css",
+      "js/controller/loanQuery/loanQuery.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/jquery-1.11.1.min.js",
+      "dfImages/df_radio.png"
+    ],
+    "refer": [
+      "views/loanQuery/loanQueryDetails.html"
+    ]
+  },
+  "views/loanMan/loanInfoUpload.html": {
+    "resources": [
+      "css/loan.css",
+      "css/base.css",
+      "js/controller/loanMan/loanInfoUpload.js",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/imgInfo.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loan/application.html",
+      "views/index.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/loanMan/bankChe.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/eur.css",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/controller/loanMan/repayInfo.js",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "js/controller/loanMan/bankChe.js",
+      "views/loanMan/bankChe_sub.html",
+      "css/loanapply.css",
+      "js/controller/loanMan/loanMan.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/loanManTwo.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/bankChe_sub.html"
+    ]
+  },
+  "views/loanMan/bankChe_sub.html": {
+    "resources": [
+      "css/eur.css",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "css/loan.css",
+      "css/style.css",
+      "js/controller/loanMan/banChe_sub.js",
+      "js/controller/loanMan/banCheSub.js",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loanapply.css",
+      "js/common/popbox.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/loanManTwo.css",
+      "css/style_dfiLoan.css"
+    ],
+    "refer": []
+  },
+  "views/loan/insuranSupmet.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/loan/insuranSupmet.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "css/loanapply.css",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "css/new_apply.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "dfImages/icon_back.png",
+      "js/core/support.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": []
+  },
+  "views/loanInquiry/wantToPickUp.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/common/mui.view.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "dfImages/onLineVerification.png",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loanInquiry/wantToPickUp.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/online.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanInquiry/wantToPickUpChoose.html"
+    ]
+  },
+  "views/loan/jointapplyCompanyInfo.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/loan/jointapplyCompanyInfo.js",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "css/loanapply.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "js/common/dictionary.js",
+      "js/common/mui.dtpicker.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/newloan.css",
+      "js/common/popbox.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "css/new_apply.css",
+      "css/mui.picker.min.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/loan/assureBasicInfo.html",
+      "views/loan/jointapplyBasicInfo.html",
+      "views/messages/message.html"
+    ]
+  },
+  "views/index2.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/underscore-min.js"
+    ],
+    "refer": []
+  },
+  "views/guide.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "dfImages/guide.png",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loanQuery/loanQueryDetails.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/controller/loanQuery/loanQueryDetails.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "views/loanMan/loanDetails.html"
+    ]
+  },
+  "views/loanMan/loanDetails.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/controller/loanMan/loanDetails.js",
+      "css/style.css",
+      "css/loanMan.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loanInquiry/loanInquiry.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "js/common/dictionary.js",
+      "dfImages/df_add.png",
+      "css/base.css",
+      "css/loanapply.css",
+      "dfImages/df_right.png",
+      "css/style.css",
+      "js/common/mui.dtpicker.js",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "css/mui.dtpicker.css",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "css/loan.css",
+      "css/loanInquiry.css",
+      "js/controller/loanInquiry/loanInquiry.js",
+      "js/common/popbox.js",
+      "css/popbox.css",
+      "fonts/mui.ttf",
+      "dfImages/df_radio.png",
+      "js/controller/loanMan/loanMan.js",
+      "css/mui.picker.min.css",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/login/login.html",
+      "views/loanInquiry/loanQueryState.html",
+      "views/messages/msg_list.html"
+    ]
+  },
+  "views/loanInquiry/loanDetails.html": {
+    "resources": [
+      "dfImages/loan_01.png",
+      "dfImages/loan_02.png",
+      "css/loan.css",
+      "css/loanInquiry.css",
+      "js/controller/loanInquiry/loanDetails.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/common/area.js",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/msgEt.png",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanMan/loanInfoUpload.html",
+      "views/index.html",
+      "views/messages/message.html",
+      "views/loan/imageInfo.html",
+      "views/loanMan/uploadLoan.html",
+      "views/loanMan/carInfoEur.html"
+    ]
+  },
+  "views/loanInquiry/loanQueryState.html": {
+    "resources": [
+      "css/base.css",
+      "js/controller/loanInquiry/loanQueryState.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "css/mui.poppicker.css",
+      "views/loanInquiry/loanQueryState_sub.html",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "fonts/mui.ttf",
+      "dfImages/df_radio.png",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/contract.css",
+      "dfImages/icon_back2.png",
+      "css/style_dfiLoan.css"
+    ],
+    "refer": [
+      "views/loanInquiry/loanQueryState_sub.html"
+    ]
+  },
+  "views/loanInquiry/loanQueryState_sub.html": {
+    "resources": [
+      "js/controller/loanInquiry/loanQueryState_sub.js",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "js/controller/loanInquiry/loanQueryStateSub.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/contract.css",
+      "fonts/mui.ttf",
+      "js/common/dfcommon.js",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/loan/applyBasicInfo.html",
+      "views/loanInquiry/loanDetails.html",
+      "views/loan/carInfo.html",
+      "views/loanMan/uploadLoan.html",
+      "views/login/login.html",
+      "views/messages/message.html",
+      "views/loan/imageInfo.html",
+      "views/loanMan/carInfoEur.html",
+      "views/loan/jointapplyBasicInfo.html",
+      "views/loan/contactInfo.html",
+      "views/loan/assureBasicInfo.html"
+    ]
+  },
+  "views/loan/authentication.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/loanapply.css",
+      "css/base.css",
+      "css/newloan.css",
+      "js/common/plugin-openLiveness.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/mui.poppicker.css",
+      "js/common/canvasResize.js",
+      "js/common/popbox.js",
+      "css/popbox.css",
+      "js/controller/loan/loan.js",
+      "css/mui.picker.css",
+      "js/common/mui.dtpicker.js",
+      "js/common/exif.js",
+      "js/common/mui.picker.min.js",
+      "css/mui.dtpicker.css",
+      "css/mui.min.css",
+      "js/common/plugin-openIdcardScan.js",
+      "js/common/area.js",
+      "js/controller/loan/authentication.js",
+      "js/common/binaryajax.js",
+      "css/loan.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "dfImages/dc_banner01.jpg",
+      "dfImages/shanchu.png",
+      "dfImages/sousuo_03.png",
+      "dfImages/guanbi.png",
+      "dfImages/sosuo_03.png",
+      "js/core/userInfo.js",
+      "css/authtication.css",
+      "css/new_apply.css",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "dfImages/icon_back.png",
+      "js/core/support.js",
+      "js/common/plugin-bankcard.js",
+      "js/common/dfcommon.js"
+    ],
+    "refer": []
+  },
+  "views/loanMan/loanManList_top.html": {
+    "resources": [
+      "js/controller/loanMan/loanManList_top.js",
+      "js/common/mui.view.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "views/loanMan/loanManList.html",
+      "js/common/jquery-1.11.1.min.js",
+      "fonts/mui.ttf",
+      "dfImages/df_radio.png",
+      "js/controller/loanMan/loanManListTop.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "js/common/mui.picker.min.js",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css"
+    ],
+    "refer": [
+      "views/loanMan/loanManList.html"
+    ]
+  },
+  "views/contract/contractQuery.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "css/popbox.css",
+      "js/controller/contract/contractQuery.js",
+      "css/base.css",
+      "css/loanapply.css",
+      "css/style.css",
+      "js/common/mui.dtpicker.js",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "css/mui.dtpicker.css",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "js/common/area.js",
+      "js/common/jquery-1.11.1.min.js",
+      "css/mui.poppicker.css",
+      "js/common/popbox.js",
+      "css/loan.css",
+      "css/loanInquiry.css",
+      "css/contract.css",
+      "fonts/mui.ttf",
+      "dfImages/df_radio.png",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "js/common/dfcommon.js"
+    ],
+    "refer": [
+      "views/contract/contractList.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/loanMan/uploadLoan.html": {
+    "resources": [
+      "css/eur.css",
+      "css/popbox.css",
+      "css/loanapply.css",
+      "js/controller/loanMan/uploadLoan.js",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/controller/loanMan/loanMan.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.poppicker.css",
+      "js/common/area.js",
+      "css/loan.css",
+      "js/common/popbox.js",
+      "css/base.css",
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/common/common.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/mui.picker.min.css",
+      "js/common/dfcommon.js",
+      "dfImages/icon_back2.png",
+      "css/style_dfiLoan.css"
+    ],
+    "refer": [
+      "views/loanMan/loanInfoUpload.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/personalCenter/commonProblem.html": {
+    "resources": [
+      "js/common/mui.view.js",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "js/common/mbank.param.js",
+      "css/mui.min.css",
+      "dfImages/FAQ_Picture.png",
+      "css/style.css",
+      "js/controller/personalCenter/commonProblem.js",
+      "js/common/jquery-1.11.1.min.js"
+    ],
+    "refer": []
+  },
+  "views/loanInquiry/wantToPickUpChoose.html": {
+    "resources": [
+      "js/controller/loanInquiry/wantToPickUpChoose.js",
+      "js/common/mui.min.js",
+      "js/common/mui.view.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "dfImages/onLineVerification.png",
+      "js/common/common.js",
+      "js/common/app.js",
+      "js/common/mbank.core.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "css/online.css",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css"
+    ],
+    "refer": [
+      "views/loan/carInfo.html"
+    ]
+  },
+  "views/contract/contractList.html": {
+    "resources": [
+      "js/controller/contract/contractList.js",
+      "css/loanMan.css",
+      "views/contract/contractList_sub.html",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.picker.css",
+      "js/common/mui.picker.min.js",
+      "js/common/common.js",
+      "js/common/mbank.core.js",
+      "js/common/mui.poppicker.js",
+      "css/mui.min.css",
+      "js/common/mbank.param.js",
+      "dfImages/df_radio.png",
+      "js/common/area.js",
+      "css/mui.poppicker.css",
+      "js/common/jquery-1.11.1.min.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/contract.css",
+      "css/style_dfiLoan.css"
+    ],
+    "refer": [
+      "views/contract/contractList_sub.html"
+    ]
+  },
+  "views/contract/contractList_sub.html": {
+    "resources": [
+      "js/controller/contract/contractList_sub.js",
+      "css/base.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/loanMan.css",
+      "js/controller/contract/contractListSub.js",
+      "js/core/userInfo.js",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "css/contract.css",
+      "js/common/mui.min.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/common.js",
+      "js/common/area.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": []
+  },
+  "views/loanMan/loanManListTop.html": {
+    "resources": [
+      "js/common/mui.picker.min.js",
+      "js/controller/loanMan/loanManListTop.js",
+      "views/loanMan/loanManList.html",
+      "css/mui.poppicker.css",
+      "css/mui.picker.css",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/common.js",
+      "css/mui.min.css",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "dfImages/df_radio.png",
+      "js/core/support.js"
+    ],
+    "refer": [
+      "views/loanMan/loanManList.html"
+    ]
+  },
+  "views/messages/message_sub.html": {
+    "resources": [
+      "js/core/userInfo.js",
+      "css/base.css",
+      "css/message.css",
+      "css/mui.min.css",
+      "js/controller/messages/messageSub.js",
+      "css/style.css",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "js/common/mui.min.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "views/messages/pullrefresh_sub.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "views/messages/pullrefresh_main.html": {
+    "resources": [
+      "css/mui.min.css",
+      "views/messages/pullrefresh_sub.html",
+      "js/common/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "views/messages/pullrefresh_sub.html"
+    ]
+  },
+  "views/messages/message.html": {
+    "resources": [
+      "css/message.css",
+      "js/controller/messages/message.js",
+      "dfImages/icon_back.png",
+      "views/messages/message_sub.html",
+      "css/style_dfiLoan.css",
+      "js/common/mui.min.js",
+      "css/base.css",
+      "css/style.css",
+      "js/core/bank.js",
+      "js/core/userInfo.js",
+      "js/common/jquery-1.12.0.min.js",
+      "css/mui.min.css",
+      "js/core/sea.js",
+      "js/core/nativeUI.js",
+      "js/core/support.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "views/messages/message_sub.html",
+      "views/loan/carInfo.html"
+    ]
+  },
+  "views/messages/msg_list.html": {
+    "resources": [
+      "js/core/userInfo.js",
+      "css/base.css",
+      "css/message.css",
+      "css/mui.min.css",
+      "views/messages/msg_list_sub.html",
+      "js/core/nativeUI.js",
+      "js/controller/messages/msg_list.js",
+      "dfImages/icon_back.png",
+      "js/core/bank.js",
+      "css/style_dfiLoan.css",
+      "js/common/mui.min.js",
+      "css/style.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/core/sea.js",
+      "js/core/support.js",
+      "fonts/mui.ttf",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/messages/msg_list_sub.html"
+    ]
+  },
+  "views/messages/msg_list_sub.html": {
+    "resources": [
+      "js/controller/messages/msg_list_sub.js",
+      "css/base.css",
+      "css/message.css",
+      "css/mui.min.css",
+      "css/style_dfiLoan.css",
+      "js/core/userInfo.js",
+      "css/style.css",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/area.js",
+      "fonts/mui.ttf",
+      "js/common/common.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/mui.min.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [
+      "views/loanInquiry/loanDetails.html",
+      "views/messages/msgDetails.html",
+      "views/login/login.html"
+    ]
+  },
+  "views/messages/msgDetails.html": {
+    "resources": [
+      "js/core/userInfo.js",
+      "css/base.css",
+      "js/controller/messages/msgDetails.js",
+      "css/mui.min.css",
+      "js/core/nativeUI.js",
+      "js/core/bank.js",
+      "js/common/mui.min.js",
+      "css/style.css",
+      "js/common/jquery-1.12.0.min.js",
+      "css/message.css",
+      "js/core/sea.js",
+      "js/common/area.js",
+      "js/core/support.js",
+      "dfImages/icon_back.png",
+      "css/style_dfiLoan.css",
+      "dfImages/icon_back2.png"
+    ],
+    "refer": [
+      "views/loanInquiry/loanDetails.html"
+    ]
+  },
+  "views/main/trialDetail.html": {
+    "href": "views/main/trialDetail.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/base.css",
+      "css/style.css",
+      "css/style_dfiLoan.css",
+      "css/new_apply.css",
+      "js/common/mui.min.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/common.js",
+      "js/common/area.js",
+      "js/core/support.js",
+      "js/core/sea.js",
+      "js/controller/main/trialDetail.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "views/loan/purchaseTax.html": {
+    "href": "views/loan/purchaseTax.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "css/base.css",
+      "css/style.css",
+      "css/style_dfiLoan.css",
+      "css/new_apply.css",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/mui.min.js",
+      "js/common/mui.picker.min.js",
+      "js/common/mui.poppicker.js",
+      "js/common/area.js",
+      "js/common/dfcommon.js",
+      "js/controller/loan/loan.js",
+      "js/core/support.js",
+      "js/core/sea.js",
+      "js/controller/loan/purchaseTax.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "views/personalCenter/policy.html": {
+    "href": "views/personalCenter/policy.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/base.css",
+      "css/style.css",
+      "css/style_dfiLoan.css",
+      "css/safeset.css",
+      "js/common/mui.min.js",
+      "js/common/jquery-1.12.0.min.js",
+      "js/common/common.js",
+      "js/core/support.js",
+      "js/core/sea.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "views/login.html": {
+    "refer": [
+      "views/index.html",
+      "views/HomePage/homePage.html",
+      "views/Mine/passwordModify.html",
+      "views/HomePage/checkMobileCode.html",
+      "views/CommonPage/policy.html",
+      "views/HomePage/setWays.html"
+    ],
+    "resources": []
+  },
+  "views/HomePage/homePage.html": {
+    "refer": [
+      "views/PreHearing/NewPre/loanPre.html",
+      "views/Calculator/calculator.html",
+      "views/CommonPage/signIng.html",
+      "views/ConSigning/conSignInfo.html",
+      "views/login.html",
+      "views/Application/loanInfo.html",
+      "views/CommonPage/preResult.html",
+      "views/Mine/mine.html",
+      "views/PreHearing/PreList/preList.html",
+      "views/ConSigning/conSignList.html",
+      "views/PreHearing/NewPre/loanPreList.html",
+      "views/ConSigning/conSigning.html",
+      "views/comPage/loanManagement.html",
+      "views/HomePage/message.html",
+      "views/ConSigning/conSignDetail.html",
+      "views/PreHearing/LendingList/lendingList.html",
+      "views/Images/imageList.html",
+      "views/Images/loanData.html",
+      "views/Images/loanData2.html"
+    ],
+    "resources": []
+  },
+  "views/PreHearing/NewPre/loanPre.html": {
+    "refer": [
+      "views/CommonPage/selectList.html",
+      "views/PreHearing/NewPre/appLicant.html",
+      "views/login.html",
+      "views/HomePage/homePage.html",
+      "views/CommonPage/selectList2.html",
+      "views/PreHearing/NewPre/loanPreList.html"
+    ],
+    "resources": []
+  },
+  "views/PreHearing/NewPre/appLicant.html": {
+    "refer": [
+      "views/CommonPage/scanIdCard.html",
+      "views/CommonPage/signInit.html",
+      "views/PreHearing/NewPre/loanPre.html",
+      "views/HomePage/homePage.html",
+      "views/login.html",
+      "views/PreHearing/NewPre/loanPreList.html"
+    ],
+    "resources": []
+  },
+  "views/Application/loanInfo.html": {
+    "refer": [
+      "views/HomePage/homePage.html",
+      "views/Application/appInfo.html",
+      "views/PreHearing/PreList/preList.html",
+      "views/login.html",
+      "views/CommonPage/insuranceSupermaket.html",
+      "views/CommonPage/selectList1.html",
+      "views/CommonPage/selectList.html",
+      "views/PreHearing/NewPre/loanPreList.html",
+      "views/CommonPage/selectList2.html"
+    ],
+    "resources": []
+  },
+  "views/CommonPage/preResult.html": {
+    "refer": [
+      "views/Application/loanInfo.html",
+      "views/login.html"
+    ],
+    "resources": []
+  },
+  "views/Mine/mine.html": {
+    "refer": [
+      "views/login.html",
+      "views/comPage/loanManagement.html",
+      "views/HomePage/homePage.html",
+      "views/Calculator/calculator.html",
+      "views/Mine/settings.html"
+    ],
+    "resources": []
+  },
+  "views/CommonPage/signInit.html": {
+    "refer": [
+      "views/CommonPage/signIng.html",
+      "views/PreHearing/NewPre/appLicant.html",
+      "views/Application/appInfo.html",
+      "views/HomePage/homePage.html",
+      "views/PreHearing/PreList/preList.html",
+      "views/login.html"
+    ],
+    "resources": []
+  },
+  "views/CommonPage/signIng.html": {
+    "refer": [
+      "views/HomePage/homePage.html",
+      "views/CommonPage/subPage.html",
+      "views/Images/imageList.html",
+      "views/CommonPage/signInit.html",
+      "views/Application/loanInfo.html",
+      "views/PreHearing/NewPre/loanPre.html",
+      "views/PreHearing/PreList/preList.html",
+      "views/ConSigning/conSigningLook.html"
+    ],
+    "resources": []
+  },
+  "views/comPage/loanManagement.html": {
+    "refer": [
+      "views/login.html",
+      "views/Mine/mine.html",
+      "views/comPage/loanList.html",
+      "views/HomePage/homePage.html",
+      "views/Calculator/calculator.html",
+      "views/PreHearing/NewPre/loanPre.html"
+    ],
+    "resources": []
+  },
+  "views/Calculator/calculator.html": {
+    "refer": [
+      "views/comPage/loanManagement.html",
+      "views/HomePage/homePage.html",
+      "views/Mine/mine.html"
+    ],
+    "resources": []
+  },
+  "views/PreHearing/PreList/preList.html": {
+    "refer": [
+      "views/login.html",
+      "views/Application/loanInfo.html",
+      "views/HomePage/homePage.html",
+      "views/Images/imageList5.html",
+      "views/ConSigning/conSignDetail.html",
+      "views/CommonPage/signIng.html",
+      "views/Images/imageList.html"
+    ],
+    "resources": []
+  },
+  "views/Application/appInfo.html": {
+    "refer": [
+      "views/login.html",
+      "views/Images/imageList.html",
+      "views/HomePage/homePage.html",
+      "views/CommonPage/signInit.html",
+      "views/PreHearing/PreList/preList.html",
+      "views/CommonPage/scanIdCard.html",
+      "views/Application/loanInfo.html"
+    ],
+    "resources": []
+  },
+  "views/ConSigning/conSignList.html": {
+    "refer": [
+      "views/ConSigning/conSigning.html",
+      "views/HomePage/homePage.html",
+      "views/ConSigning/conSignDetail.html",
+      "views/ConSigning/conSignInfo.html",
+      "views/ConSigning/conSignListSearch.html"
+    ],
+    "resources": []
+  },
+  "views/ConSigning/conSigning.html": {
+    "refer": [
+      "views/ConSigning/conSignList.html",
+      "views/HomePage/homePage.html",
+      "views/ConSigning/conSignInfo.html"
+    ],
+    "resources": []
+  },
+  "views/PreHearing/NewPre/loanPreList.html": {
+    "refer": [
+      "views/CommonPage/preResult.html",
+      "views/PreHearing/NewPre/loanPre.html",
+      "views/HomePage/homePage.html",
+      "views/ConSigning/conSignDetail.html",
+      "views/PreHearing/NewPre/loanPreListSearch.html"
+    ],
+    "resources": []
+  },
+  "views/Images/imageList.html": {
+    "refer": [
+      "views/HomePage/homePage.html",
+      "views/Images/imageInfo.html",
+      "views/Application/loanInfo.html",
+      "views/CommonPage/confirmUser.html",
+      "views/PreHearing/PreList/preList.html"
+    ],
+    "resources": []
+  },
+  "views/ConSigning/conSignDetail.html": {
+    "refer": [
+      "views/details/loanInfo.html",
+      "views/details/loanPre.html",
+      "views/ConSigning/conSignInfo.html",
+      "views/details/loanData.html",
+      "views/CommonPage/preResult.html",
+      "views/comPage/loanHistory.html"
+    ],
+    "resources": []
+  },
+  "views/details/loanPre.html": {
+    "refer": [
+      "views/details/appLicant.html"
+    ],
+    "resources": []
+  },
+  "views/details/loanInfo.html": {
+    "refer": [
+      "views/details/appInfo.html"
+    ],
+    "resources": []
+  },
+  "views/details/appInfo.html": {
+    "refer": [
+      "views/details/imageList.html"
+    ],
+    "resources": []
+  },
+  "views/CommonPage/subPage.html": {
+    "refer": [
+      "views/HomePage/homePage.html"
+    ],
+    "resources": []
+  },
+  "views/HomePage/checkMobileCode.html": {
+    "refer": [
+      "views/HomePage/homePage.html",
+      "views/login.html"
+    ],
+    "resources": []
+  },
+  "views/Mine/settings.html": {
+    "refer": [
+      "views/Mine/iphoneModify.html",
+      "views/Mine/passwordModify.html"
+    ],
+    "resources": []
+  },
+  "views/Mine/iphoneModify.html": {
+    "refer": [
+      "views/HomePage/homePage.html",
+      "views/login.html"
+    ]
+  },
+  "views/Images/imageList5.html": {
+    "refer": [
+      "views/PreHearing/PreList/preList.html",
+      "views/Images/imageInfo.html"
+    ]
+  },
+  "views/ConSigning/conSignInfo.html": {
+    "refer": [
+      "views/ConSigning/conSignInfoBank.html",
+      "views/ConSigning/conSignList.html",
+      "views/ConSigning/conSignInit.html"
+    ]
+  },
+  "views/ConSigning/conSignInfoBank.html": {
+    "refer": [
+      "views/ConSigning/conSignInfoSelectBank.html"
+    ]
+  },
+  "views/ConSigning/conSignInit.html": {
+    "refer": [
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/PreHearing/LendingList/lendingList.html": {
+    "refer": [
+      "views/ConSigning/conSignDetail.html",
+      "views/HomePage/homePage.html",
+      "views/Images/loanData.html"
+    ]
+  },
+  "views/details/loanData.html": {
+    "refer": [
+      "views/PreHearing/LendingList/lendingList.html",
+      "views/details/imageLoanList.html",
+      "views/comPage/loanList.html",
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/details/imageLoanList.html": {
+    "refer": [
+      "views/details/imageInfo.html"
+    ]
+  },
+  "views/details/imageList.html": {
+    "refer": [
+      "views/details/imageInfo.html"
+    ]
+  },
+  "views/Images/loanData.html": {
+    "refer": [
+      "views/Images/imageLoanList.html",
+      "views/HomePage/homePage.html",
+      "views/PreHearing/LendingList/lendingList.html"
+    ]
+  },
+  "views/Images/imageLoanList.html": {
+    "refer": [
+      "views/Images/imageInfo.html",
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/Images/imageLoanList2.html": {
+    "refer": [
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/Images/loanData2.html": {
+    "refer": [
+      "views/Images/imageLoanList2.html"
+    ]
+  },
+  "views/CommonPage/buyRate.html": {
+    "refer": [
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/comPage/loanList.html": {
+    "refer": [
+      "views/comPage/loanManagement.html",
+      "views/ConSigning/conSignDetail.html",
+      "views/CommonPage/preResult.html"
+    ]
+  },
+  "views/CommonPage/confirmUser.html": {
+    "refer": [
+      "views/HomePage/homePage.html"
+    ]
+  },
+  "views/ConSigning/conSignInfoSelectBank.html": {
+    "refer": [
+      "views/ConSigning/conSignInfoBank.html"
+    ]
+  },
+  "views/ConSigning/conSignListSearch.html": {
+    "refer": [
+      "views/ConSigning/conSignList.html"
+    ]
+  },
+  "views/PreHearing/NewPre/loanPreListSearch.html": {
+    "refer": [
+      "views/PreHearing/NewPre/loanPreList.html"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>联系电话修改</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<script src="../../js/common/standdardSize.js"></script>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/mine.css">   
+	<style>
+		.list li:after{
+			z-index: 20;
+		}
+		.list li .tel-box{
+			margin-bottom: 0px;
+			border: none;
+			font-size: .26rem;
+		}
+		button:enabled:active{
+			color: #64A5D2;
+			border: none;
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">联系电话修改</h1>
+	</header>
+	<div class="mui-content">
+		<ul class="list">
+			<li>
+				<input id="oldTel" class="tel-box" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入原手机号码" />
+			</li>
+			<li>
+				<input id="newTel" class="tel-box" type="tel" oninput="this.value=this.value.replace(/[^0-9.]+/,'');if(this.value.length>11)this.value=this.value.slice(0,11);" pattern="[^0-9$]+" placeholder="请输入新手机号码" />
+			</li>
+			<li class="flex">
+				<input id="reTel" type="text" placeholder="请输入验证码" style="padding-left:15px;"/>
+				<button id="verCode" class="mui-text-center">获取短信验证码</button>
+			</li>
+		</ul>
+		<a id="submit" class="btn mui-text-center primary-btn">提交</a>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script> 
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('Mine/iphoneModify');
+	</script>
+</body>
+</html>

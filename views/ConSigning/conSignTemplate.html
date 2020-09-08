@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>邮件发送</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/mui.picker.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignInfo.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">邮件发送</h1>
+	</header>
+	<div class="mui-bar mui-bar-footer">
+		<a id="next" href="javascript:;">发送</a>
+	</div>
+	<div class="mui-content">
+		<!-- 基本信息 -->
+		<div class="info sign-mail" id="dataList">
+			<h4>发送清单</h4>
+			<!-- <p>
+				<span data-value="01">贷款拨付确认书</span>
+				<span data-value="02">贷款合同</span>
+				<span data-value="03">委托扣划授权书</span>
+				<span data-value="04">抵押贷款合同</span>
+				<span data-value="03">委托扣划授权书</span>
+				<span data-value="04">抵押贷款合同</span>
+			</p> -->
+		</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/mui.picker.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSignMail');
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>申请代办列表查询</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../../css/mui.min.css">
+	<link rel="stylesheet" href="../../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../../css/base.css">
+	<link rel="stylesheet" href="../../../css/controller/conSignList.css">   
+	<script src="../../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<i class="iconSymbol icon__search input_search"></i>
+		<input id="search" class="search" type="search" placeholder="输入申请编号/合同批次号/姓名/身份证号" /> 
+		<span class="cancel">取消</span>
+	</header>
+	<div class="mui-content">
+		<div id="conSingList" class="mui-slider-group mt20">
+			<ul class="table-view">
+			</ul>
+		</div>
+	</div>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<script src="../../../js/common/mui.min.js" ></script>
+	<script src="../../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../../js/common/dropload.min.js"></script>
+	<script src="../../../js/core/sea.js"></script>
+	<script src="../../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../../js/controller/"
+		});
+		seajs.use('PreHearing/lendingListSearch');
+	</script>
+</body>
+</html>

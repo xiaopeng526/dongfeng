@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<meta charset="UTF-8">          
+		<title>影像及留言</title>     
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/images.css"> 
+	</head>  
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title" id="title">上传放款资料</span>
+		</header> 
+		<div class="content">
+			<h4>影像信息</h4>
+			<div class="df-list" id="imgList">
+				<div id="typeDiv" class="sed">	
+				</div>
+				<div id="listDiv">
+					<div class="df-list-item">
+	    				<span class="item-title">请上传以下放款资料</span>
+	    				<span class="iconSymbol icon__dorp icon-go">详细列表</span>
+	    				<!--<span class="iconSymbol icon__up icon-go">详细列表</span>-->
+					</div>
+					<div class="df-list-item info-list-item" id="infoDiv">
+	    				<!--<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>
+	    				<div class="item-desc">
+	    					<span class="info-desc">抵押贷款合同（必收）</span>
+	    					<span class="info-state">已传</span>
+	    				</div>-->
+					</div>
+				</div>
+		    	
+			</div> 
+			<h4>留言信息</h4>
+			<div class="message-list">
+				<textarea class="msg-text" id="msgText" rows="3" cols="30" maxlength="125" placeholder="请输入留言内容"></textarea>
+				<div class="msg-tips">
+					<span class="msg-num" id="msgNum">125/125</span>
+					<span class="msg-btn" id="msgBtn">留言</span>
+				</div>
+			</div>
+			<div id="msgList">
+				<!--<div class="message-list margin-top">
+					<div class="msg-det">反倒是附近的顺口溜姐夫的抗衰老几点开始来访接待室了第三方是的范德萨反倒是狂蜂浪蝶十几份可怜的使劲考了反倒是艰苦奋斗使劲考了</div>
+					<div class="msg-time">2019-04-22 15:12</div>
+					<div class="msg-tips">
+						<span class="msg-name">经销商&nbsp;&nbsp;<em>陈女士</em></span>
+						<span class="msg-tel">15689784561</span>
+						<span class="msg-btn change" id="changeBtn">修改</span>
+					</div> 
+				</div>
+				<div class="message-list margin-top">
+					<div class="msg-det">反倒是附近的顺口溜姐夫的抗衰老几点开始来</div>
+					<div class="msg-time">2019-04-22 15:12</div>
+					<div class="msg-tips">
+						<span class="msg-name">经销商&nbsp;&nbsp;<em>陈女士</em></span>
+						<span class="msg-tel">15689784561</span>
+					</div> 
+				</div>-->	
+			</div>
+			<div class="df-list margin-top">
+	    		<div class="df-list-item">
+	    			<span class="item-title history">贷款历史</span>
+	    			<span id="loanHistory" class="iconSymbol icon__go icon-go">查看</span>
+				</div>
+			</div> 
+		</div>
+		<div class="footer">
+			<span id="pre" class="preBtn">上一步</span> 
+			<span id="back" style="display:none;" class="preBtn">打回</span>
+			<span id="manual" style="display: none;" class="preBtn">人工审批</span>
+			<span id="sub">提交</span> 	
+		</div>
+		<div class="waiting-box" style="display: none;" id="waitingBox">
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在疯狂加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('Images/imageLoanList');
+		</script>
+	</body>
+</html>
+
+

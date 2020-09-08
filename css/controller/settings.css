@@ -1,0 +1,23 @@
+button:disabled {
+  opacity: 1; }
+
+.content .df-list .message-code .df-list-item {
+  align-items: center; }
+  .content .df-list .message-code .df-list-item .item-input {
+    width: 4.58rem;
+    padding-right: .18rem; }
+  .content .df-list .message-code .df-list-item .get-code {
+    position: relative;
+    height: .6rem;
+    line-height: .6rem;
+    padding-left: .4rem;
+    color: #64A5D2;
+    font-size: .24rem;
+    border: none; }
+    .content .df-list .message-code .df-list-item .get-code:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: .6rem;
+      width: .02rem;
+      background-color: #ddd; }

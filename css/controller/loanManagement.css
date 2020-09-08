@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+ul{margin-top:.2rem;}
+/* .nav-bar-icon{padding:12px;top:11px;right:.1rem;font-size:.2rem;} */
+/*.icon-badge{position:absolute; right:.25rem;top:.4rem;width:auto;height:auto;padding: .02rem .06rem .01rem .06rem;;line-height: 1.2;text-align: center;  color:#fff;background: red;border-radius: 50%;}*/
+.info li{position:relative;display: flex;align-items: center;height:.8rem;padding: 0 .24rem 0 .4rem;font-size: .26rem;color:#222;background: #fff;}
+.info li.three{margin:.1rem 0;}
+.info li.two{margin-top:.1rem;}
+.info li:after{position:absolute;left:.2rem;bottom:0;right:0;content:'';height:1px;background: #eee;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
+.info li label{width:2.6rem;color:#222;}
+.info li input[type="text"]{flex:4rem;padding:10px 0;margin-bottom:0;font-size: .26rem;color:#222;;border:none;background: transparent;}
+.btn{width:5.8rem;height:.88rem;margin:3rem auto 0;line-height: .88rem;text-align: center;color:#fff;background: url(../../images/login03.png);background-size:cover;}

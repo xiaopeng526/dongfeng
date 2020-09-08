@@ -1,0 +1,12 @@
+{
+  "name": "dealerApp_Branch2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/login.js -o js/login.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

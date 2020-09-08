@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>贷款详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignDetail.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">贷款详情</h1>
+	</header>
+	<div class="mui-content">
+		<div class="status">
+			<ul class="status-img flex">
+				<li id="preLoan">
+					<i class="iconSymbol icon__step1"></i>
+					<p>预审</p>
+				</li>
+				<li id="preApply">
+					<i class="iconSymbol icon__step2"></i>
+					<p>申请</p>
+				</li>
+				<li id="preCon">
+					<i class="iconSymbol icon__step3"></i>
+					<p>合同</p>
+				</li>
+				<li id="sufLoan">
+					<i class="iconSymbol icon__step4"></i>
+					<p>放款</p>
+				</li>
+				<li id="loan">
+					<i class="iconSymbol icon__step"></i>
+					<p>完成</p>
+				</li>
+			</ul>
+		</div>
+		<div class="loanDetail">
+			<div class="first flex">
+				<label id="applCde"></label>
+				<time id="lastChgDt"></time>
+			</div>
+			<div class="second">
+				<p id="custName"></p>
+				<p id="svm_mode_nam">
+					<label>车辆型号</label>
+					<span id="carType"></span>
+				</p>
+				<p id="loanTyp">
+					<label>贷款产品</label>
+					<span id="loanProduct"></span>
+				</p>
+			</div>
+			<div class="three">
+				<p class="flex">
+					<span class="applyAmt">贷款金额</span>
+					<span class="applyTnr">申请期限</span>
+					<span class="loanIntRate">执行利率 </span>
+					<span class="loanSts">贷款状态</span>
+				</p>
+				<p class="flex">
+					<span id="loanAmount" class="applyAmt"></span>
+					<span id="loanTime" class="applyTnr"></span>
+					<span id="loanRate" class="loanIntRate"></span>
+					<span id="loanStatus" class="loanSts"></span>
+				</p>
+			</div>
+			<p class="four flex">
+				<span id="condition1">免抵押 <i></i></span> 
+				<span id="condition2">免担保 <i></i></span> 
+				<span id="condition3">合同是否免共借 <i></i></span> 
+			</p>
+		</div>
+		<ul class="mui-table-view detail">
+			<li class="mui-table-view-cell flex">
+				<label id="pageLabel">合同签订</label>
+				<span>查看 <i class="iconSymbol icon__go"></i></span>
+			</li>
+			<li class="mui-table-view-cell flex preLoan">
+				<label id="loanProcess">预审结论</label>
+				<span>查看 <i class="iconSymbol icon__go"></i></span>
+			</li>
+			<li id="loanHistory" class="mui-table-view-cell flex">
+				<label id="historyLabel">贷款历史</label>
+				<span>查看 <i class="iconSymbol icon__go"></i></span>
+			</li>
+		</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/core/cityData.min.js"></script>
+	<script src="../../js/core/commonData.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSignDetail');
+	</script>
+</body>
+</html>

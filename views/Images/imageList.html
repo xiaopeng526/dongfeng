@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<meta charset="UTF-8">       
+		<title>影像及留言</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/images.css"> 
+	</head>  
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title" id="title">影像及留言</span>  
+		</header>
+		<div class="content">
+			<h4>影像信息</h4>  
+			<div class="df-list" id="imgList">
+		    	<!--<span class="iconSymbol icon__go icon-go">已上传<em>7</em>张</span>-->
+			</div> 
+			<h4>留言信息</h4>
+			<div class="message-list">
+				<textarea class="msg-text" id="msgText" rows="3" cols="30" maxlength="125" placeholder="请输入留言内容"></textarea>
+				<div class="msg-tips">
+					<span class="msg-num" id="msgNum">125/125</span>
+					<span class="msg-btn" id="msgBtn">留言</span>
+				</div>
+			</div>  
+			<div id="msgList">
+			</div>
+			<div class="df-list margin-top">
+	    		<div class="df-list-item">
+	    			<span class="item-title history">贷款历史</span>
+	    			<span id="loanHistory" class="iconSymbol icon__go icon-go">查看</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="modify">修改</span>
+			<span id="back" style="display:none;" class="preBtn">打回</span>
+			<span id="sub">提交</span>   
+		</div>
+		<div class="waiting-box" id="waitingBox" style="display: none;">
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('Images/imageList');
+		</script>
+	</body>
+</html>
+
+

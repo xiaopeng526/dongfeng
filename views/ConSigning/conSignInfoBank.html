@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>开户银行</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignInfo.css"> 
+	<link rel="stylesheet" href="../../css/weui.css">
+	<script src="../../js/common/standdardSize.js"></script>
+	<script src="../../js/common/zepto.min.js"></script>
+	<style>
+		.nav-bar-icon{top:0px;}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="iconSymbol icon__back mui-action-back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">开户银行</h1>
+		<div id="select-bank" class="nav-bar-icon">
+			<i class="iconSymbol icon__search"></i>
+		</div>
+	</header>
+	<div class="mui-bar mui-bar-footer">
+		<a id="next" href="javascript:;">确定</a>
+	</div>
+	<div class="mui-content">
+		<!-- 开户银行 -->
+		<div class="info bank-info">
+			<ul>
+				<li>
+					<label>开户银行</label>
+					<input id="amountBank" type="text"readonly="readonly" placeholder="请选择开户银行">
+					<i class="iconSymbol icon__go"> </i>
+				</li>
+				<li>
+					<label>开户银行所在省</label>
+					<input id="amountProvice" type="text" readonly="readonly" placeholder="请选择开户行所在省">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+				<li>
+					<label>开户银行所在市</label>
+					<input id="amountCity" type="text" readonly="readonly" placeholder="请选择开户行所在市">
+					<i class="iconSymbol icon__go"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/jweixin-1.0.0.js" ></script>
+	<script src="../../js/common/weui.min.js" ></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/core/cityData.min.js"></script>
+	<script src="../../js/core/commonData.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSignInfoBank');
+	</script>
+</body>
+</html>

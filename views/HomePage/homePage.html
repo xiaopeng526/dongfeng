@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/controller/conSignList.css">
+	<link rel="stylesheet" href="../../css/controller/subPage.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/homePage.css">
+	<link rel="stylesheet" href="../../css/controller/index.css">
+	<style>
+		.storey_box{
+			position:fixed;
+			left:0;
+			bottom:0;
+			top:0;
+			right:0;
+			background-color:rgba(0,0,0,0.8);
+			z-index:150;
+			display: none; 
+		}
+		.down_Info{
+			display:none; 
+			position:fixed;
+			width:100%;
+			height:100%;
+			top:20%;
+			z-index:500;
+		}
+		.down_Info .imgBtn{
+			width:100%;
+			position: relative;
+			text-align:center;
+		}
+		.down_Info .imgBtn img{
+			width:70%;
+		}
+		.down_Info .downProBar{
+			width:60%;height:1rem;position:absolute;left:20%;bottom: .4rem;
+		}
+		.down_Info .downProBar b{
+			display: inline-block;width:0.4rem;height:0.4rem;line-height:0.4rem;z-index:500;position:absolute;top:0.5rem;left:46%;font-size:0.25rem;color:#fff;
+		}
+		.down_Info p{
+			width:100%;height:0.4rem;padding-top: .2rem;
+		}
+	</style>
+</head> 
+<body id="body">
+	<div class="header">
+		<span class="logo-img"></span>
+		<span class="iconSymbol icon icon__info" id="rangInfo">
+			<span class="icon-badge" id="iconBadge" style="display: none;"></span>
+		</span>
+	</div>
+	<div class="content">
+		<!-- 公告模块announcement-->
+		<div class="anment-box">   
+			<span class="anment-tip"></span> 
+			<div id="anment" class="anment-content">
+				<ul class="anment-content-ul">
+					<!-- <li>用经销商app可以快速将爱车带回家</li>
+					<li>东风标致，属于你的专属车辆</li>
+					<li>东风雪铁龙，实惠方便，快速安全，你的选择，值得拥有</li> -->
+				</ul>
+			</div> 
+			<a class="more-anment" id="moreAnment">
+				更多
+				<span class="iconSymbol icon__go"></span>
+			</a>
+		</div>
+		<!-- 待办列表todolist-->
+		<div class="todo-box">
+			<div class="todo-list" id="preList">
+				<span class="todo-icon"></span>
+				<span class="todo-detail">预审待办</span>
+				<span class="todo-badge"></span>
+			</div>
+			<div class="todo-list" id="applyList">
+				<span class="todo-icon"></span>
+				<span class="todo-detail">申请待办</span>
+				<span class="todo-badge"></span>
+			</div>
+			<div class="todo-list" id="conList">
+				<span class="todo-icon"></span>
+				<span class="todo-detail">合同签订</span>
+				<span class="todo-badge"></span>
+			</div>
+			<div class="todo-list" id="loanList">
+				<span class="todo-icon"></span>
+				<span class="todo-detail">放款待办</span>
+				<span class="todo-badge"></span>
+			</div>
+		</div>
+		<!-- 最新待办latestlist-->
+		<div class="latestlist-box">
+			<div class="latest-header">
+				<span class="header-title">最新待办</span>
+			</div>
+			<div class="list">
+				<ul class="table-view">
+			<!-- 				<li class="table-view-cell" data-value="1">
+								<div class="flex">
+									<span class="fontColor applCde font26">2219042400008</span>
+									<time class="fontColor font26">2019/05/15 12:02</time>
+								</div>
+								<div class="flex">
+									<span class="name min-name">迪丽热巴巴巴</span>
+									<div class="price">
+										<p>贷款金额 <small> 6000 </small> 元</p>
+										<p>508 1.8T 3级自动挡</p>
+									</div>
+									<i class="iconSymbol icon__go"></i>
+								</div>
+								<div class="flex">
+									<p class="fontColor font24 more">
+										<i class="iconSymbol icon__dorp"></i>  更多操作
+									</p>
+									<a class="btn fontColor font24" href="javascript:;">合同签署</a>
+									<span class="status fontColor font24">信贷审核中</span> 
+								</div>
+								<div>
+									<a class="btn fontColor font24" href="javascript:;">签署中</a>
+									<a class="btn fontColor font24" href="javascript:;">发送邮件</a>
+									<a class="btn fontColor font24" href="javascript:;">上传放款资料</a>
+									<a class="btn fontColor font24" href="javascript:;">合同修改</a>
+								</div>
+							</li> -->
+						</ul>
+			</div>
+		</div>
+	</div>
+	<nav class="df-bar">
+		<ul class="df-bar-tab" id="nav">
+			<li id="homePage" class="df-tab-item df-active">
+				<span class="iconSymbol icon__home"></span>
+				<span class="df-tab-label">首页</span>
+			</li>
+			<li id="calculator" class="df-tab-item">
+				<span class="iconSymbol icon__calculator1"></span>
+				<span class="df-tab-label">计算器</span>
+			</li>
+		</ul>
+		<ul class="df-bar-tab"> 
+			<li id="loanPre" class="df-tab-item">
+				<span class="iconSymbol icon__loan"></span>
+				<span class="df-tab-label">贷款管理</span>
+			</li>
+			<li id="mine" class="df-tab-item">
+				<span class="iconSymbol icon__mine1"></span>
+				<span class="df-tab-label">我的</span>
+			</li>
+		</ul>
+		<span id="newPre" class="df-newpre"></span>
+	</nav>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<div class="storey_box" id="storey_box"></div>
+	<div class="down_Info" id="down_info1">
+		<div class="imgBtn" id="imgBtn">
+			<img src="../../images/zdgx.png">
+			<div class="downProBar" id="downProBar">
+				<b id="preNum"></b> 
+				<p></p>
+			</div>
+		</div>	
+	</div>
+	
+	<div class=""></div>
+	<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+	<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script type="text/javascript" src="../../js/common/mui.lazyload.js"></script>
+	<script type="text/javascript" src="../../js/common/mui.lazyload.img.js"></script>
+	<script src="../../js/common/dropload.min.js"></script>
+	<script src="../../js/plugins/plugin-permission.js"></script>
+	<script type="text/javascript" src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script src="../../js/common/Base64.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('HomePage/homePage');
+	</script>
+</body>
+</html>

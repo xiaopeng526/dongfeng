@@ -1,0 +1,14 @@
+@charset "utf-8";
+ul{padding-top:.2rem;}
+li{background: #fff;font-size:.26rem;color:#666;margin-bottom:.2rem;}
+h4{position:relative;display: flex;justify-content: space-between;align-items: center;height:.68rem;padding:0 .2rem 0 .4rem;font-weight: 400;color:#666;}
+h4:after{position:absolute;left:.2rem;bottom:0;right:0;content:'';height:1px;background: #eee;-webkit-transform: scaleY(0.5);transform: scaleY(0.5);}
+h4 span{font-size:.32rem;}
+h4 time{font-size:.26rem;}
+li > div{padding:0 .2rem 0 .4rem;}
+li > div > p{display: flex;justify-content: space-between;align-items: center;height:.6rem;}
+li b{font-style: normal;font-weight: 400;}
+li i{color:#aaa;}
+.message-box{padding-bottom:.1rem;}
+.ellipsis{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color:#222;}
+.message-box span{float: left;width:1.2rem;color:#222;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}

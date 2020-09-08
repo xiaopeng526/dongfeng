@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>合同签署</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/mui.picker.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSignInfo.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+	<style>
+		.mui-bar-footer a{height:44px;line-height: 44px;}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title">合同签署</h1>
+	</header>
+	<div id="btnConfirm" class="mui-bar mui-bar-footer sign-init-footer">
+		<a id="prev" href="javascript:;">上一步</a>
+		<a id="next" class="btn-border" href="javascript:;">在线签署</a>
+	</div>
+	<div class="mui-content">
+		<div class="conSign-init">
+			<img src="../../images/conSign1.png" />
+		</div>
+	</div>
+	<!--<div class="loading">
+		<div class="loading-box">
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips mui-text-center">正在疯狂加载中~</div>
+		</div>
+	</div>-->
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/mui.picker.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSignInit');
+	</script>
+</body>
+</html>

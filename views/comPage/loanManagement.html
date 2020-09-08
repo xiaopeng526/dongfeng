@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>贷款管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/weui.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/index.css">
+	<link rel="stylesheet" href="../../css/controller/loanManagement.css">
+	<script src="../../js/common/standdardSize.js"></script>
+	<script src="../../js/common/zepto.min.js"></script>
+	<style>
+		.mui-content{min-height: 680px;	}
+		.mui-bar-nav~.mui-content{padding-top:0.85rem;}
+		header.mui-bar-nav{height:0.8rem;padding-top:0rem;}
+		#bell {position: absolute;top: 0rem;right: .3rem;font-size: .48rem; }
+		.icon-badge {width: auto;height: auto;position:absolute;top: 0.1rem;right:0rem;padding: .02rem .06rem .01rem .06rem;line-height: 1.2;font-size: .2rem;color: #fff;background: red;border-radius: 50%; }
+	</style>
+</head>
+<body style="height:100%;">
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a>
+		<h1 class="mui-title" >贷款管理</h1>
+		<span class="iconSymbol icon icon__info" id="bell">
+			<span class="icon-badge" id="iconBadge"></span>
+		</span>
+	</header>
+	<div class="mui-content">
+		<ul class="info base-info">
+			<li>
+				<label>申请开始日期</label>
+				<input id="applyStartTime" class="time" type="text" placeholder="请选择申请开始日期" readonly="readonly" />
+				<i class="iconSymbol icon__go"></i>
+			</li>
+			<li>
+				<label>申请结束日期</label>
+				<input id="applyEndTime" class="time" type="text" placeholder="请选择申请结束日期" readonly="readonly" />
+				<i class="iconSymbol icon__go"></i>
+			</li>
+			<!-- <li class="two">
+				<label>放款开始日期</label>
+				<input id="lendingStartTime" class="time" type="text" placeholder="请选择申请开始日期" readonly="readonly" />
+				<i class="iconSymbol icon__go"></i>
+			</li>
+			<li>
+				<label>放款结束日期</label>
+				<input id="lendingEndTime" class="time" type="text" placeholder="请选择申请结束日期" readonly="readonly" />
+				<i class="iconSymbol icon__go"></i>
+			</li> -->
+			<li class="three">
+				<label>按条件查询</label>
+				<input id="serchInput" type="text" placeholder="申请编号/合同批次号/姓名/身份证号" />
+			</li>
+			<li>
+				<label>贷款状态</label>
+				<input id="loanStatus" type="text" placeholder="请选择贷款状态" readonly="readonly" />
+				<i class="iconSymbol icon__go"></i>
+			</li>
+		</ul>
+		<div id="searchBtn" class="btn">查询</div>
+	</div>
+	<nav class="df-bar">
+		<ul class="df-bar-tab" id="nav">
+			<li id="homePage" class="df-tab-item">
+				<span class="iconSymbol icon__home"></span>
+				<span class="df-tab-label">首页</span>
+			</li>
+			<li id="calculator" class="df-tab-item">
+				<span class="iconSymbol icon__calculator1"></span>
+				<span class="df-tab-label">计算器</span>
+			</li>
+		</ul>
+		<ul class="df-bar-tab"> 
+			<li id="loanPre" class="df-tab-item df-active">
+				<span class="iconSymbol icon__loan"></span>
+				<span class="df-tab-label">贷款管理</span>
+			</li>
+			<li id="mine" class="df-tab-item">
+				<span class="iconSymbol icon__mine1"></span>
+				<span class="df-tab-label">我的</span>
+			</li>
+		</ul>
+		<span id="newPre" class="df-newpre"></span> 
+	</nav>
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/jweixin-1.0.0.js"></script>
+	<script src="../../js/common/weui.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('comPage/loanManagement');
+	</script>
+</body>
+</html>

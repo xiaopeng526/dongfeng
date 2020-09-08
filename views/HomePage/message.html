@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>消息中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/controller/dropload.css">
+	<link rel="stylesheet" href="../../css/controller/message.css">  
+</head>
+<body>
+	<header>
+		<span id="back" class="iconSymbol icon__back"></span>
+		<span class="title" id="title">消息中心</span>         
+	</header>
+	<div class="content">
+		<ul class="message-box" id="messageBox">                        
+			<!-- <li>
+				<p class="message-header">
+					<span>申请单号： <em>2190472803</em></span>
+					<span class="loan-detail">查看贷款详情</span>
+				</p>
+				<p class="message-main"> 
+					<span>贷款已审批，请到线下门店进行打印签署贷款合同，欢迎下次光临，感谢您的到来。</span>
+					<span class="iconSymbol icon__dorp message-icon"></span>
+				</p>
+				<p class="message-footer">
+					<span>2019-06-01 15:02</span>     
+				</p> 
+			</li>
+			
+			<li>
+				<p class="message-header">
+					<span>申请单号： <em>2190472803</em></span>
+					<span class="loan-detail">查看贷款详情</span>
+				</p>   
+				<p class="message-main">
+					<span>贷款已审批，请到线下门店进行打印签署贷款合同，欢迎下次光临，感谢您的到来。</span>
+					<span class="iconSymbol icon__dorp message-icon"></span>   
+				</p>
+				<p class="message-footer">
+					<span>2019-06-01 15:02</span>
+				</p>
+			</li> -->
+		</ul>	
+	</div>
+	<script type="text/javascript" src="../../js/common/mui.min.js" ></script>
+	<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script type="text/javascript" src="../../js/core/dropload.min.js"></script>
+	<script type="text/javascript" src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('HomePage/message');
+	</script>
+</body>
+</html>

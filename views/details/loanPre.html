@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<meta charset="UTF-8">  
+		<title>预审贷款信息</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/mui.picker.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/preStyle.css">
+		<style>
+			input[type=range]{
+				-webkit-appearance: none;
+		        width: 6rem;
+		        height: .06rem;
+		        margin: .5rem .75rem .6rem .55rem;
+		        border-radius: 1px;
+		        background-color: #ddd; 
+		   	}
+	        input[type=range]::-webkit-slider-thumb{
+	        	-webkit-appearance: none;
+	        	width: .2rem;
+	            height: .2rem;
+	            margin-top: -.06rem; /*使滑块超出轨道部分的偏移量相等*/
+	            background-color: #64A5D2;
+	            border-radius: 50%; /*外观设置为圆形*/
+	       	}
+	        input[type=range]::-webkit-slider-runnable-track {
+                height: .06rem;
+                border-radius: 1px; /*将轨道设为圆角的*/
+                background: #64A5D2;
+            }
+            .range-box{
+            	position: relative;
+            }
+            .range-span{
+            	color: #64A5D2;
+            	font-size: .24rem;
+            	line-height: .24rem;
+            	position: absolute;
+            	top: .08rem; left: .48rem;
+            }
+            .tip-box{
+            	color: #8c8c8c;
+            	font-size: .24rem;
+            	position: absolute;	
+            	top: .7rem;
+            }
+            .start{
+        		position: absolute;
+        		left: .55rem;
+        	}
+        	.end{
+        		position: absolute;
+        		left: 6.2rem;
+        	}
+		</style>
+	</head>
+	<body>
+		<header>
+			<span class="iconSymbol icon__back mui-action-back" id="back"></span>
+			<span class="title">新预审</span>
+		</header>
+		<div class="content">
+			<div class="df-list">
+				<div class="df-list-item">
+					<span class="item-title must-input">车辆类型</span>
+					<input id="carTypeInput" class="item-input" type="text" placeholder="请选择类型" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">品牌</span>
+					<input id="brandInput" class="item-input" type="text" placeholder="请选择品牌" readonly="readonly">
+				</div>
+				<div class="df-list-item" style="display: none;">
+					<span class="item-title">子品牌</span>
+					<input id="subBrandInput" class="item-input" type="text" placeholder="请选择子品牌" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">车系</span> 
+					<input id="carLineInput" class="item-input" type="text" placeholder="请选择车系" readonly="readonly">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">年型</span>
+					<input id="yearTypeInput" class="item-input" type="text" placeholder="请选择车系" readonly="readonly">
+				</div>
+				<div class="df-list-item"> 
+					<span class="item-title must-input">车型</span>
+					<p id="carModelInput" class="item-p item-p-after"></p>
+				</div>
+				<div class="df-list-item" style="display: none">
+		    		<span class="item-title">动力类型</span>
+		    		<input id="powerTypeInput" type="text" readonly="readonly" class="item-input">
+		    	</div>  
+		    	<div class="df-list-item" style="display: none" id="firstDate">
+					<span class="item-title must-input">首次登记日期</span>
+					<input id="firstDateInput" type="text" readonly="readonly" placeholder="请选择" class="item-input">
+				</div>
+				<div class="df-list-item">
+					<span class="item-title">指导价</span>
+					<input id="guidPriceInput" class="item-input" type="text" readonly="readonly">
+					<span class="icon-go">元</span>
+				</div>
+				<div class="df-list-item">
+					<span class="item-title must-input">车辆价格</span>
+					<input id="carPriceInput" class="item-input" type="text" placeholder="请输入车辆价格" disabled="disabled">
+					<span class="icon-go">元</span>
+				</div>   
+			</div> 
+			
+			<div class="df-list calculate">            
+				<p>首付比例</p> 
+				<div class="range-box">
+					<span class="range-span" id="rangeSpan">20%</span>
+					<input type="range" id="input" value="0">
+					<div class="tip-box">
+						<span class="start" id="start">20%</span>
+						<span class="end" id="end">80%</span>
+					</div>
+				</div>
+				<p>
+					<span>首付金额<em id="downPayAmount"></em> 元</span>
+					<span>贷款金额<em id="loanAmount"></em> 元</span>  
+				</p>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="next">下一步</span>   
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.poppicker.js"></script>
+		<script type="text/javascript" src="../../js/core/commonData.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('details/loanPre');
+		</script>
+	</body>
+</html>

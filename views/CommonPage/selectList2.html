@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选车型</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/mui.indexedlistphone.css"></link>
+		<link rel="stylesheet" href="../../css/controller/selectList.css"></link>
+		<style type="text/css">
+			.mui-group-list {
+				position: relative;
+				overflow: hidden;
+				background-color: #fafafa;
+				height: 300px;
+				cursor: default;
+			}
+			.mui-group-list-inner {
+				margin: 0px;
+				padding: 0px;
+				overflow-y: auto;
+				border: none;
+			}
+			.mui-group-list-inner::-webkit-scrollbar {
+				width: 0px;
+				height: 0px;
+				visibility: hidden;
+			}
+			.mui-group-list-empty-alert,
+			.mui-group-list-inner.empty ul {
+				display: none;
+			}
+			.mui-group-list-inner.empty .mui-group-list-empty-alert {
+				display: block;
+			}
+			.mui-group-list-empty-alert {
+				padding: 30px 15px;
+				text-align: center;
+				color: #ccc;
+				padding-right: 45px;
+			}
+			.mui-ios .mui-group-list-inner {
+				width: calc(100% + 10px);
+			}
+			.mui-group-list-group,
+			.mui-group-list-item {
+				padding-right: 45px;
+			}
+			.mui-ios .mui-group-list-group,
+			.mui-ios .mui-group-list-item,
+			.mui-ios .mui-group-list-empty-alert {
+				padding-right: 55px;
+			}
+			.mui-group-list-group {
+				background-color: #f7f7f7;
+			}
+			.mui-group-list-group {
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+			.mui-group-list-search {  
+				/*border-bottom: solid 1px #e3e3e3;*/
+				z-index: 15;   
+			}
+			.mui-group-list-search.mui-search:before {
+				margin-top: -10px;   
+			}
+			.mui-group-list-search input {
+				border-radius: 0px;
+				margin: 0px;
+				background-color: #fafafa;
+			}
+			.mui-group-list-bar {         
+				width: 23px;
+				background-color: rgba(118, 155, 218, 0.8);;
+				position: absolute;
+				height: 100%;
+				z-index: 10;
+				right: 0px;
+				-webkit-transition: .2s;     
+				
+			}
+			.mui-group-list-bar a {
+				display: block;
+				text-align: center;
+				font-size: 0.24rem;
+				padding: 0px;
+				margin: 0px;
+				line-height: 15px;
+				color:rgba(255, 255, 255, 0.5);;
+			}
+			.mui-group-list-bar.active {
+				background-color: #769BDA;
+			}
+			.mui-group-list-bar.active a {
+				color: #fff;
+			}
+			.mui-group-list-bar.active a.active {
+				color: #007aff;
+			}
+			.mui-group-list-alert {
+				position: absolute;
+				z-index: 20;
+				background-color: rgba(118, 155, 218, 0.5);
+				width: 80px;
+				height: 80px;
+				left: 50%;
+				top: 50%;
+				margin-left: -40px;
+				margin-top: -40px;
+				border-radius: 40px;
+				text-align: center;
+				line-height: 80px;
+				font-size: 35px;
+				color: #fff;
+				display: none;
+				-webkit-transition: .2s;
+			}
+			.mui-group-list-alert.active {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<span class="iconSymbol icon__back mui-action-back"></span> 
+			<span class="title">选品牌</span> 
+		</header>
+		<div class="content" style="height: 2000px;">
+			<div style="width:100%;background:#fff;position:fixed;top:1.6rem;z-index:20;">
+				<div class="mui-group-list" id="carModelListBox">
+					<div class="mui-group-list-bar" id="Letter_Box">
+						<a>A</a>
+						<a>B</a>
+						<a>C</a>
+						<a>D</a>
+						<a>E</a>
+						<a>F</a>
+						<a>G</a>
+						<a>H</a>
+						<a>I</a>
+						<a>J</a>
+						<a>K</a>
+						<a>L</a>
+						<a>M</a>
+						<a>N</a>
+						<a>O</a>
+						<a>P</a>
+						<a>Q</a>
+						<a>R</a>
+						<a>S</a>
+						<a>T</a>
+						<a>U</a>
+						<a>V</a>
+						<a>W</a>
+						<a>X</a>
+						<a>Y</a>
+						<a>Z</a>
+					</div>
+					<div class="mui-group-list-alert"></div>
+					<div class="mui-group-list-inner" style="border: none;height: 100%;overflow: auto;">
+						<!--<div class="mui-group-list-empty-alert">没有数据</div>-->
+						<ul class="mui-table-view" id="showDiv">   
+							<!--<li style="font-size:0.27rem;height: 0.7rem;line-height: 0.7rem;background: #769BDA;color: #FFFFFF;padding-left:0.2rem;">A</li>
+							<li class="mui-table-view-cell mui-indexed-list-item bgall bg1 citylist_style" style="padding-left:0.45rem;">21212121</li>
+							<li class="mui-table-view-cell mui-indexed-list-item bgall bg1 citylist_style" style="padding-left:0.45rem;">121212121212</li>-->
+						</ul>
+					</div>
+			</div>	
+			</div>	
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.indexedlistphone.js"></script>
+		<script type="text/javascript" src="../../js/common/JSPinyin.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('CommonPage/selectList2');
+		</script>
+	</body>
+</html>

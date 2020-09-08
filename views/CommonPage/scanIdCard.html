@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">    
+		<title>身份证扫描</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/scanIdCard.css">
+		<style>
+			.confirm-box{
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 100;
+				background-color: rgba(0,0,0,0.6);	
+			}
+			.info-zm{
+				position: fixed;
+				width: 78%;
+				left: 11%;
+				top: 25%;
+				z-index: 500;
+				background-color: #fff;
+				border: 1px solid #ddd;
+				border-radius: 12px;
+			}
+			.info-zm h2{
+				width: 100%;
+				height: .8rem;
+				line-height: .8rem;
+				font-size: .35rem;
+				font-weight: 400;
+				text-align: center;
+			}
+			.info-zm ul{
+				width: 100%;
+				font-size: .3rem;
+				padding: .18rem .4rem;
+			}
+			.info-zm ul li{
+				width: 100%;
+				height: .86rem; 
+				line-height: .86rem;
+			}
+			.info-zm ul li input{
+				height: 70%;
+			    width: 60%;
+			    padding: 0;
+			    margin: 0 auto;
+			    border: none;
+			    font-size: 0.28rem;
+			    text-align: center;
+			    color: #666666;
+			    border-bottom: 1px solid rgba(214,214,214,0.3);
+			    border-radius: 0;
+			}
+			.info-zm .btn-box{
+				display: flex;
+				justify-content: space-between;
+				border-top: 1px solid rgba(222,222,222,0.9);
+				font-size: .32rem;
+				text-align: center;
+				height: .84rem;
+				line-height: .84rem;
+			}
+			.info-zm .btn-box div{
+				flex: 1;
+			}
+			.info-zm .btn-box div:first-child{
+				flex: 1;
+				border-right: 1px solid rgba(222,222,222,0.9);
+			}
+			.radio-box{
+				display: flex;
+				justify-content: space-between;
+				width: 64%;
+				margin: .1rem auto;
+				text-align: center;
+				font-size: 0.26rem;	
+			}
+			/*.radio-box label{
+				width: 50%;
+				font-family: Times, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				
+			}*/
+			/*.radio-box input{
+				-webkit-appearance: none;
+				font-family: Times, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				padding-top: 2px;
+			}*/
+			input[type="radio"]{
+				position: absolute;
+    			clip: rect(0, 0, 0, 0);
+			}
+			input[type="radio"] + label{
+				position: relative;
+				padding-left: .4rem;
+			}
+			input[type="radio"] + label::before {
+			    content: "\a0"; /*不换行空格*/
+			    display: inline-block;
+			    vertical-align: middle;
+			    font-size: 18px;
+			    width: .26rem;
+			    height: .26rem;
+			    /*margin-right: .4rem;*/
+			    border-radius: 50%;
+			    border: 1px solid #999;
+			    text-indent: .05rem;
+			    line-height: 1; 
+			    box-sizing: border-box;
+			    position: absolute;
+			    top: 0; left: 0;
+			}
+			input[type="radio"]:checked + label::before {
+			    background-color: #333;
+			    background-clip: content-box;
+			    padding: .035rem;
+			}
+		</style>
+	</head>
+	<body>    
+		<header> 
+			<span class="iconSymbol icon__back mui-action-back"></span> 
+			<span class="title">身份证扫描</span>  
+		</header>
+		<div class="content">
+			<div>
+				<h4>点击下方区域获得身份证人像面</h4>
+				<div class="card-box front" id="front">
+					<img src="" id="frontImg">
+				</div>
+				<h4>点击下方区域获得身份证国徽面</h4>
+				<div class="card-box reverse" id="reverse">
+					<img src="" id="reverImg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span id="submit">提交</span>
+		</div>
+		<div class="confirm-box" style="display: none;" id="conBox">
+			<div class="info-zm">
+				<div id="zmInfos" style="display:none;">
+					<h2>请确认您的身份证信息</h2>
+					<ul>
+						<li>
+							<span>姓&emsp;&emsp;名:</span>
+							<input type="text" id="name" readonly="readonly" value="杨栋">
+						</li>
+						<li>
+							<span>性&emsp;&emsp;别:</span>
+							<input type="text" id="sex" readonly="readonly">
+						</li>
+						<li>
+							<span>出生日期:</span>
+							<input type="text" id="birth" readonly="readonly">
+						</li>
+						<li>
+							<span>证件号码:</span>
+							<input type="text" id="cidNo" readonly="readonly">
+						</li>
+					</ul>
+				</div>
+				<div id="fmInfos" style="display:none;">
+					<h2>请确认您的身份证有效期</h2>	
+					<div class="radio-box">
+						<div>
+							<input type="radio" id="duanQi" name="youxiaoqi" checked="checked" value="0" disabled>
+							<label for="duanQi"> 短期有效</label>
+						</div>
+						<div>
+							<input type="radio" id="changQi" name="youxiaoqi" value="1" disabled>
+							<label for="changQi"> 长期有效</label>
+						</div>
+					</div>
+					<ul>
+						<li>
+							<span>开始日期</span>
+							<input type="text" id="starDate" readonly="readonly">
+						</li>
+						<li>
+							<span>到期日期</span>
+							<input type="text" id="overDate" readonly="readonly">
+						</li>
+					</ul>
+				</div>
+				<div class="btn-box">
+					<div id="reSb">重新识别</div>
+					<div id="conBtn">确认</div>
+				</div>	
+			</div>
+		</div>
+		<div class="waiting-box" id="waitingBox" style="display: none;">
+			<div class="loading-bdg"></div>
+			<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+			<div class="loading-tips">正在加载中~</div>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/resize.js"></script>
+		<script type="text/javascript" src="../../js/plugins/plugin-openIdcardScan.js"></script>
+		<script type="text/javascript" src="../../js/plugins/plugin-openLiveness.js"></script>
+		<script type="text/javascript" src="../../js/plugins/plugin-bankcard.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('CommonPage/scanIdCard');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<title>提交成功</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/subPage.css"></link>
+	</head> 
+	<body>
+		<header>
+			<span class="iconSymbol icon__back" id="iconBack"></span> 
+			<span class="title">提交成功</span> 
+		</header>
+		<div class="content">
+			<div class="sub-box">
+				<div class="sub-up">
+					<div id="suc">
+						<div class="sub-img"></div>
+						<div class="suc-title">
+							预审申请提交成功
+						</div>
+					</div>
+					<div id="wait" style="display: none;">
+						<div class="sub-img2"></div>
+						<div class="wait-title">
+							当前为非营业时间
+						</div>
+						<div class="wait-content">
+							<div>下一工作日9:00起</div>
+							<div>将尽快受理您的贷款申请</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="sub-under">
+					<div class="cde-box">
+						<span class="cde-title">申请编号 </span>
+						<span class="cde-main" id="applCdeVal"></span>
+					</div>
+					<div class="under-tips" id="tips1">预审结果稍后将以短信息告知您</div>
+					<div class="under-tips" id="tips2" style="display: none;">届时预审结果将以短信息告知您</div>
+					<div class="under-tips2">您也可参考“预审待办”列表提示信息</div>
+				</div>	
+			</div>
+			<div class="sub-tips">
+				预审结论仅供参考，如您在预审补录信息时修改任一贷款条件，均可能导致审批结论发生变化。
+			</div>
+			<button class="trial" id="back">返回首页</button>
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('CommonPage/subPage');
+		</script>
+	</body>
+</html>

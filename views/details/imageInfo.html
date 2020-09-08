@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>   
+	<head>    
+		<meta charset="UTF-8">                 
+		<title>影像信息</title>                  
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">     
+		<script type="text/javascript" src="../../js/common/standdardSize.js"></script>
+		<link rel="stylesheet" href="../../css/iconfont/iconfont.css"></link>
+		<link rel="stylesheet" href="../../css/controller/images.css"> 
+	</head>  
+	<body>  
+		<header>  
+			<span class="iconSymbol icon__back" id="iconBack"></span>
+			<span class="title"></span>    
+		</header>   
+		<div class="content">         
+			<div class="img-list" id="imgList">
+				<!--<div class="add" id="add"></div>--> 
+			</div>	 
+		</div>
+		<script type="text/javascript" src="../../js/common/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../../js/common/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/common/md5.js"></script>
+		<script type="text/javascript" src="../../js/common/previewImage.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.js"></script>
+		<script src="../../js/common/vconsole.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: "../../js/controller/"
+			});
+			seajs.use('details/imageInfo');
+		</script>
+	</body>
+</html>
+
+

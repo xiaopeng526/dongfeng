@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>合同签署</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" href="../../css/mui.picker.min.css">
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/controller/conSinging.css">   
+	<script src="../../js/common/standdardSize.js"></script>
+</head>
+<body> 
+	<header class="mui-bar mui-bar-nav">
+		<a id="back" class="iconSymbol icon__back mui-icon mui-pull-left"></a> <!-- mui-action-back-->
+		<h1 class="mui-title">合同签署</h1>
+		<div class="nav-bar-icon">
+			<i id="refresh" class="iconSymbol icon__refresh"></i>
+		</div>
+	</header>
+	<div class="mui-bar mui-bar-footer">
+		<a id="prev" href="javascript:;">终止签署</a>
+		<a id="next" class="btn-border" href="javascript:;">发送邮件</a>
+		<a id="prevAndNext" class="btn-border" href="javascript:;">发送邮件</a>
+	</div>
+	<div class="mui-content">
+		<div class="offer-status">
+			<img id="imgStatus" src="../../images/conSinging.png" />
+		</div>
+		<div class="content2">
+			<ul class="offser-list">
+				<!-- <li>
+					<h4 class="name">主借人签名</h4>
+					<p>
+						<label>姓<small class="white">李白</small>名</label>
+						<span id="mainBorrowerName">李白</span>
+					</p>
+					<p>
+						<label>手机号码</label>
+						<span id="mainBorrowerIphone" class="iphone">15011388102 <i class="iconSymbol icon__tel"></i></span>
+					</p>
+					<p>
+						<label>发起时间</label>
+						<span id="mainBorrowerStartTime">2019-04-28 09:30:14</span>
+					</p>
+					<p>
+						<label>完成时间</label>
+						<span id="mainBorrowerEndTime">2019-04-28 09:30:14</span>
+					</p>
+					<p>
+						<label>状<small class="white">李白</small>态</label>
+						<span class="status">签署完成</span>
+					</p>
+					<img class="orCode" src="../../images/conSignOrCode.png">
+				</li>
+					<li>
+					<h4 class="name">主借人签名</h4>
+					<p>
+						<label>姓<small class="white">李白</small>名</label>
+						<span id="mainBorrowerName">李白</span>
+					</p>
+					<p>
+						<label>手机号码</label>
+						<span id="mainBorrowerIphone" class="iphone">15011388102 <i class="iconSymbol icon__tel"></i></span>
+					</p>
+					<p>
+						<label>发起时间</label>
+						<span id="mainBorrowerStartTime">2019-04-28 09:30:14</span>
+					</p>
+					<p>
+						<label>完成时间</label>
+						<span id="mainBorrowerEndTime">2019-04-28 09:30:14</span>
+					</p>
+					<p>
+						<label>状<small class="white">李白</small>态</label>
+						<span class="status">签署完成</span>
+					</p>
+					<img class="orCode" src="../../images/conSignOrCode.png">
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	<!-- 拨打电话遮罩层 -->
+	<div class="telMask">
+		<div class="tel">
+			<div class="telCode">是否呼叫 <span></span></div>
+			<div class="telBtn">
+				<a id="telCancel" href="javascript:;">取消</a>
+				<a id="telConfirm" href="">立即呼叫</a>
+			</div>
+		</div>
+	</div>
+	<!-- 二维码弹窗 -->
+	<div class="orCodeMask">
+		<div class="bigOrCodeOuter">
+			<div class="bigOrCode">
+				<div id="qrcode"></div>
+				<p>
+					<a id="qrcodeName">王先生</a> | <span id="qrcodeIphone"></span>
+				</p>
+				<p>扫一扫上方二维码快速签署</p>
+			</div>
+			<i class="iconSymbol icon__close"></i>
+		</div>
+	</div>
+	<div class="waiting-box" id="waitingBox" style="display: none;">
+		<div class="loading-bdg"></div>
+		<img class="loading-gif" src="../../images/loadingGIF.gif"></img>
+		<div class="loading-tips">正在加载中~</div>
+	</div>
+	<!--<div class="con-loading">
+		<div class="loading-box">
+			<img class="loading-gif" src="../../images/loadingGIF.gif" />
+			<div class="loading-tips mui-text-center">正在疯狂加载中~</div>
+		</div>
+	</div>-->
+	<script src="../../js/common/mui.min.js" ></script>
+	<script src="../../js/common/jquery-1.12.0.min.js" ></script>
+	<script src="../../js/common/mui.picker.min.js"></script>
+	<script src="../../js/common/jquery.qrcode.min.js"></script>
+	<script src="../../js/core/dropload.min.js"></script>
+	<script src="../../js/core/sea.js"></script>
+	<script src="../../js/common/vconsole.min.js"></script>
+	<script>
+		seajs.config({
+			base: "../../js/controller/"
+		});
+		seajs.use('ConSigning/conSigning');
+	</script>
+</body>
+</html>
